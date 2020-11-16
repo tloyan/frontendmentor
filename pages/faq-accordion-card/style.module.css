@@ -1,0 +1,31 @@
+.faq_accordion_card {
+  --ratio: 0.75;
+  --s-5: calc(var(--s-4) * var(--ratio));
+  --s-4: calc(var(--s-3) * var(--ratio));
+  --s-3: calc(var(--s-2) * var(--ratio));
+  --s-2: calc(var(--s-1) * var(--ratio));
+  --s-1: calc(var(--s0) * var(--ratio));
+  --s0: 1rem;
+  --s1: calc(var(--s0) / var(--ratio));
+  --s2: calc(var(--s1) / var(--ratio));
+  --s3: calc(var(--s2) / var(--ratio));
+  --s4: calc(var(--s3) / var(--ratio));
+  --s5: calc(var(--s4) / var(--ratio));
+
+  --font-plain: 'Kumbh Sans', sans-serif;
+
+  --weight-thin: 400;
+  --weight-thick: 700;
+  --dark-desaturated-blue: hsl(238, 29%, 16%);
+  --soft-red: hsl(14, 88%, 65%);
+  --soft-violet: hsl(273, 75%, 66%);
+  --soft-blue: hsl(240, 73%, 65%);
+  --very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --dark-grayish-blue: hsl(240, 6%, 50%);
+  --light-grayish-blue: hsl(240, 5%, 91%);
+
+  font-family: var(--font-plain);
+  font-size: var(--s-1);
+  font-weight: var(--weight-thin);
+  color: var(--dark-grayish-blue);
+}
