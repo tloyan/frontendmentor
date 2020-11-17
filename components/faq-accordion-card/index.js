@@ -15,12 +15,11 @@ const FaqAccordionCardComponent = () => (
   <div className={style.container}>
     <div className={style.center}>
       <div className={style.svg_container}>
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa 
-        aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa aaaaa
+        <div className={style.overflow}>
+          <img className={style.image_desktop} src="/faq-accordion-card/illustration-woman-online-desktop.svg" />
+        </div>
+        <img className={style.image_desktop_box} src="/faq-accordion-card/illustration-box-desktop.svg" />
+        <img className={style.image_mobile} src="/faq-accordion-card/illustration-woman-online-mobile.svg" />
       </div>
       <div className={style.faq_container}>
         <div className={style.faq_subcontainer}>

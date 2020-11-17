@@ -23,7 +23,6 @@
   flex-wrap: wrap;
 
   border-radius: 1.5rem;
-  overflow: hidden;
 
   background-color: azure;
 }
@@ -34,14 +33,94 @@
 
   /* MOBIL */
   min-height: 105px;
-  /* max-height: 105px; */
+  max-height: 105px;
+
+  border-top-left-radius: 1.5rem;
+  border-top-right-radius: 1.5rem;
+
+  background-image: url('/faq-accordion-card/bg-pattern-mobile.svg');
+  background-size: 240px;
+  background-position: 50% 0px;
+  background-repeat: no-repeat;
 
   background-color: yellow;
+  position: relative;
+}
+
+.overflow {
+  min-width: 100%;
+  min-height: 100%;
+  position: relative;
+  overflow: hidden;
+  background-color: transparent;
+}
+
+.image_desktop {
+  display: none;
+}
+
+.image_desktop_box {
+  display: none;
+}
+
+.image_mobile {
+  background-color: transparent;
+  position: absolute;
+  top: -108px;
+  left: calc(50% - 147px);
+}
+
+@media (min-width: 963px) {
+  .svg_container {
+    min-height: none;
+    max-height: none;
+    background-image: url('/faq-accordion-card/bg-pattern-desktop.svg');
+    background-size: 255%;
+    background-position: -575px -280px;
+    background-repeat: no-repeat;
+    border-bottom-left-radius: 1.5rem;
+    border-top-right-radius: 0;
+
+
+  }
+
+  .faq_container {
+    border-top-right-radius: 1.5rem;
+    border-bottom-left-radius: 0rem;
+    /* max-width: none; */
+
+  }
+
+  .image_desktop {
+    display: initial;
+    width: 122%;
+    height: auto;
+    position: absolute;
+    top: 76px;
+    left: -82px;
+    background-color: transparent;
+  }
+  
+  .image_desktop_box {
+    display: initial;
+    position: absolute;
+    width: 46%;
+    top: 207px;
+    left: -83px;
+    background-color: transparent;
+  }
+
+  .image_mobile {
+    display: none;
+  }
 }
 
 .faq_container {
   flex-grow: 1;
   flex-basis: 550px;
+
+  border-bottom-right-radius: 1.5rem;
+  border-bottom-left-radius: 1.5rem;
 
   display: flex;
   flex-direction: column;
@@ -51,6 +130,8 @@
 .faq_subcontainer {
   box-sizing: content-box;
   width: 90%;
+
+  /* max-width: 495px; */
 
   margin-left: auto;
   margin-right: auto;
