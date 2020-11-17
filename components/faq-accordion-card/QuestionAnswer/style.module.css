@@ -1,18 +1,21 @@
 .question_answer {
+  --space: var(--s0);
+  --font-size: calc( ((var(--s0) - var(--s-1)) / 2) + var(--s-1) );
   overflow: hidden;
-  max-height: calc((var(--s-1) * 2) + var(--s-1));
+  max-height: calc((var(--space) * 2) + var(--font-size));
   transition: max-height .5s ease-out;
 
 }
 
 .question_answer.collapse {
-  max-height: calc(((var(--s-1) * 2) + var(--s-1)) * 2);
+  max-height: calc(((var(--space) * 2) + var(--font-size)) * 2);
 }
 
 .question {
   display: flex;
   justify-content: space-between;
-  padding: var(--s-1);
+  padding-top: var(--space);
+  padding-bottom: var(--space);
 }
 
 .question.collapse > p,
@@ -41,9 +44,7 @@
 }
 
 .answer {
-  margin-right: 1rem;
-  padding: var(--s-1);
-  padding-top: 0;
+  padding-bottom: var(--space);
 }
 
 
@@ -52,5 +53,4 @@
   margin-bottom: 0;
   margin-left: auto;
   margin-right: auto;
-  width: calc(100% - (var(--s-1) * 2));
 }
