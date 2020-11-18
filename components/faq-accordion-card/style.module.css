@@ -3,7 +3,7 @@
   min-width: 100vw;
   padding: var(--s1);
 
-  background-color: aqua;
+  background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 100%);
 
   display: flex;
   flex-direction: column;
@@ -24,7 +24,7 @@
 
   border-radius: 1.5rem;
 
-  background-color: azure;
+  background-color: white;
 }
 
 .svg_container {
@@ -43,7 +43,6 @@
   background-position: 50% 0px;
   background-repeat: no-repeat;
 
-  background-color: yellow;
   position: relative;
 }
 
@@ -81,8 +80,8 @@
 
   display: flex;
   flex-direction: column;
-  padding-top: var(--s2);
-  padding-bottom: var(--s2);
+  padding-top: var(--s4);
+  padding-bottom: var(--s4);
 }
 
 .faq_subcontainer {
@@ -125,9 +124,6 @@
     border-top-right-radius: 1.5rem;
     border-bottom-left-radius: 0rem;
     justify-content: center;
-
-    /* max-width: none; */
-
   }
 
   .faq_subcontainer > h2 {
