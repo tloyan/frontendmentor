@@ -6,10 +6,16 @@
   --light-grayish-magenta: hsl(300, 24%, 96%);
   --white: hsl(0, 0%, 100%);
 
-  --font-size: 15px;
+  --font-size-small: 13px;
+  --font-size-medium: 15px;
+  --font-size-big: 32px;
+  --font-size-extrabig: 48px;
   --font-family: 'Spartan', sans-serif;
 
   --regular: 400;
   --medium: 500;
   --bold: 700;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
 }
