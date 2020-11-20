@@ -87,6 +87,11 @@
   margin-top: 18px;
 }
 
+/* Add space between star */
+.rated_item > :first-child > * + * {
+  margin-left: 8px;
+}
+
 /* Add margin between element preceded by another element (Stack Layout) */
 .feedback_container > * + * {
   margin-top: 16px;
@@ -157,27 +162,23 @@
   line-height: 24px;
 }
 
-@media (min-width: 1132px) {
+@media (min-width: 1156px) {
   .container {
-    /* minimum space between content and top or bottom (vertical centering) */
-    padding-top: 4rem;
-    padding-bottom: 3rem;
-
-    /* minimum space between content and left or right (horizontal centering) */
-    padding-left: 5rem;
-    padding-right: 5rem;
-
+    /* remove unecessary padding for desktop */
+    padding: 0px;
     background-image: url('/social-proof-section/bg-pattern-top-desktop.svg'), url('/social-proof-section/bg-pattern-bottom-desktop.svg');
   }
 
   .center {
     display: flex;
     flex-wrap: wrap;
+    /* move rated container to the right */
+    justify-content: space-between;
     max-width: 1111px;
   }
 
   .description_container {
-    flex-basis: 50%;
+    max-width: 460px;
   }
 
   .description_container > * {
@@ -192,7 +193,7 @@
     flex-basis: 50%;
     margin-top: 0px;
 
-    padding-top: 17px;
+    padding-top: 12px;
     padding-bottom: 17px;
 
     display: flex;
@@ -228,7 +229,7 @@
   }
 
   .feedback_container {
-    height: 272px;
+    height: 266px;
     display: flex;
     align-items: center;
   }
@@ -236,6 +237,10 @@
   .feedback_container > * + * {
     margin-top: 0px;
     margin-left: 30px;
+  }
+
+  .feedback_item {
+    max-height: 234px;
   }
 
   .feedback_item.first {
