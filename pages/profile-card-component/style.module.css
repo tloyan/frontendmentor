@@ -1,0 +1,15 @@
+.profile_card_component {
+  --dark-cyan: hsl(185, 75%, 39%);
+  --very-dark-desaturated-blue: hsl(229, 23%, 23%);
+  --dark-grayish-blue: hsl(227, 10%, 46%);
+  --dark-gray: hsl(0, 0%, 59%);
+
+  --font-family: 'Kumbh Sans', sans-serif;
+  --weight-regular: 400; 
+  --weight-bold: 700;
+
+  font-family: var(--font-family);
+  font-weight: var(--weight-regular);
+
+  color: var(--very-dark-desaturated-blue);
+}

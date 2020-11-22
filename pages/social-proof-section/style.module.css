@@ -1,0 +1,22 @@
+.social_proof_section {
+  --very-dark-magenta: hsl(300, 43%, 22%);
+  --soft-pink: hsl(333, 80%, 67%);
+
+  --dark-grayish-magenta: hsl(303, 10%, 53%);
+  --light-grayish-magenta: hsl(300, 24%, 96%);
+  --white: hsl(0, 0%, 100%);
+
+  --font-size-small: 13px;
+  --font-size-medium: 15px;
+  --font-size-big: 32px;
+  --font-size-extrabig: 48px;
+  --font-family: 'Spartan', sans-serif;
+
+  --regular: 400;
+  --medium: 500;
+  --bold: 700;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size-small);
+  letter-spacing: -0.03em;
+}

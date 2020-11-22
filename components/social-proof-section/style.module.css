@@ -1,0 +1,253 @@
+.container {
+  /* set the size of the main container */
+  min-width: 100vw;
+  min-height: 100vh;
+
+  /* Enable vertical centering */
+  display: flex;
+  flex-direction: column;
+
+  /* minimum space between content and top or bottom (vertical centering) */
+  padding-top: 80px;
+  padding-bottom: 80px;
+
+  /* minimum space between content and left or right (horizontal centering) */
+  padding-left: 24px;
+  padding-right: 24px;
+
+  background-image: url('/social-proof-section/bg-pattern-top-mobile.svg'), url('/social-proof-section/bg-pattern-bottom-mobile.svg');
+  background-position: top left, bottom right;
+  background-repeat: no-repeat;
+}
+
+.center {
+  /* horizontal center */
+  margin-left: auto;
+  margin-right: auto;
+
+  /* vertical center */
+  margin-top: auto;
+  margin-bottom: auto;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.center > * + * {
+  margin-top: 50px;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.description_container > * + * {
+  margin-top: 26px;
+}
+
+.description_container > * {
+  text-align: center;
+}
+
+.description_container > h1 {
+  font-size: var(--font-size-big);
+  font-weight: var(--bold);
+  color: var(--very-dark-magenta);
+}
+
+.description_container > p {
+  font-size: var(--font-size-medium);
+  font-weight: var(--medium);
+  color: var(--dark-grayish-magenta);
+  line-height: 24px;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.rated_container > * + * {
+  margin-top: 14px;
+}
+
+.rated_container > * > p {
+  font-weight: var(--bold);
+  color: var(--very-dark-magenta);
+}
+
+.rated_item {
+  /* center element in two line */
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  /* center content vertically */
+  padding-top: 16px;
+  padding-bottom: 18px;
+  /* round angles */
+  border-radius: 10px;
+
+  background-color: var(--light-grayish-magenta);
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.rated_item > * + * {
+  margin-top: 18px;
+}
+
+/* Add space between star */
+.rated_item > :first-child > * + * {
+  margin-left: 8px;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.feedback_container > * + * {
+  margin-top: 16px;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.feedback_item > * + * {
+  margin-top: 28px;
+}
+
+.feedback_item {
+  /* center content vertically */
+  padding-top: 40px;
+  padding-bottom: 40px;
+  /* center content horizontally */
+  padding-left: 33px;
+  padding-right: 33px;
+  /* round angles */
+  border-radius: 10px;
+
+  background-color: var(--very-dark-magenta);
+}
+
+.feedback_item_head {
+  /* center name and status right to the image */
+  display: flex;
+  align-items: center;
+}
+
+.feedback_item_head_content {
+  /* space between image and head content*/
+  margin-left: 23px;
+}
+
+/* Add margin between element preceded by another element (Stack Layout) */
+.feedback_item_head_content > * + * {
+  margin-top: 8px;
+}
+
+.feedback_item_head_content > p {
+  font-weight: var(--regular);
+  color: var(--soft-pink);
+}
+
+.feedback_item_head_content > p:first-child {
+  font-weight: var(--bold);
+  color: var(--white);
+}
+
+.feedback_item_head > :first-child {
+  /* hide image overflowing (need for image circle) */
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  /* do the circle by round width / 2 */
+  border-radius: 20px;
+}
+
+.feedback_item_head > :first-child > img {
+  /* same width as wrapper and auto resize */
+  width: 40px;
+  height: auto;
+}
+
+.feedback_item_content {
+  font-weight: var(--medium);
+  color: var(--light-grayish-magenta);
+  line-height: 24px;
+}
+
+@media (min-width: 1156px) {
+  .container {
+    /* remove unecessary padding for desktop */
+    padding: 0px;
+    background-image: url('/social-proof-section/bg-pattern-top-desktop.svg'), url('/social-proof-section/bg-pattern-bottom-desktop.svg');
+  }
+
+  .center {
+    display: flex;
+    flex-wrap: wrap;
+    /* move rated container to the right */
+    justify-content: space-between;
+    max-width: 1111px;
+  }
+
+  .description_container {
+    max-width: 460px;
+  }
+
+  .description_container > * {
+    text-align: start;
+  }
+
+  .description_container > h1 {
+    font-size: var(--font-size-extrabig);
+  }
+
+  .rated_container {
+    flex-basis: 50%;
+    margin-top: 0px;
+
+    padding-top: 12px;
+    padding-bottom: 17px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .rated_container > * + * {
+    margin-top: 17px;
+  }
+
+  .rated_item {
+    flex-direction: row;
+    padding-top: 19px;
+    padding-bottom: 19px;
+
+    padding-left: 33px;
+
+    min-width: 444px;
+  }
+
+  .rated_item.first {
+    align-self: flex-start;
+  }
+
+  .rated_item.last {
+    align-self: flex-end;
+  }
+
+  .rated_item > * + * {
+    margin-top: 0px;
+    margin-left: 33px;
+  }
+
+  .feedback_container {
+    height: 266px;
+    display: flex;
+    align-items: center;
+  }
+
+  .feedback_container > * + * {
+    margin-top: 0px;
+    margin-left: 30px;
+  }
+
+  .feedback_item {
+    max-height: 234px;
+  }
+
+  .feedback_item.first {
+    align-self: flex-start;
+  }
+
+  .feedback_item.last {
+    align-self: flex-end;
+  }
+}
