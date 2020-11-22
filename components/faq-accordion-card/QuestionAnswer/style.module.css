@@ -1,6 +1,6 @@
 .question_answer {
   --space: var(--s0);
-  --font-size: calc( ((var(--s0) - var(--s-1)) / 2) + var(--s-1) );
+  --font-size: 12px;
   overflow: hidden;
   max-height: calc((var(--space) * 2) + var(--font-size));
   transition: max-height .5s ease-out;
@@ -16,6 +16,10 @@
   justify-content: space-between;
   padding-top: var(--space);
   padding-bottom: var(--space);
+}
+
+.question:hover {
+  cursor: pointer;
 }
 
 .question.collapse > p,
@@ -46,7 +50,6 @@
 .answer {
   padding-bottom: var(--space);
 }
-
 
 .divider {
   margin-top: 0;
