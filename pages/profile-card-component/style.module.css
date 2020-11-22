@@ -10,4 +10,6 @@
 
   font-family: var(--font-family);
   font-weight: var(--weight-regular);
+
+  color: var(--very-dark-desaturated-blue);
 }

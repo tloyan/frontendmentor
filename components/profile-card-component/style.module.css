@@ -1,4 +1,119 @@
 .container {
   width: 100vw;
   height: 100vh;
+  /* minimum space between profile card container and screen border */
+  padding-left: 22px;
+  padding-right: 22px;
+  /* vertical centering */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  background-image: url("/profile-card-component/bg-pattern-top.svg"), url("/profile-card-component/bg-pattern-bottom.svg");
+  background-repeat: no-repeat;
+  background-size: 100vw, 100vw;
+  background-position-x: -50vw, 50vw;
+  background-position-y: -50vw, calc(100vh - 100vw / 2);
+  background-color: var(--dark-cyan);
+}
+
+.profile_card_container {
+  width: 100%;
+  /* fix the max-width because background image is not design to be repeat */
+  max-width: 350px;
+  /* horizontal centering */
+  margin-left: auto;
+  margin-right: auto;
+
+  border-radius: 10px;
+  /* hide what's coming out of the container (profile_image_container background) */
+  overflow: hidden;
+  background-color: white;
+}
+
+.profile_image_container {
+  --background-height: 140px;
+  --image-height: 96px;
+  --image-width: 96px;
+  --image-border-size: 5px;
+  height: calc(var(--background-height) + (var(--image-height) / 2) + (var(--image-border-size)));
+
+  background-image: url("/profile-card-component/bg-pattern-card.svg");
+  background-position: top;
+  background-repeat: no-repeat;
+  /* push the content to the bottom of the div */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.profile_image_container > div {
+  width: calc(var(--image-width) + var(--image-border-size) * 2);
+  height:  calc(var(--image-height) + var(--image-border-size) * 2);
+  border: var(--image-border-size) solid white;
+  border-radius: calc(var(--image-width) / 2 + var(--image-border-size));
+  /* hide what is coming out of the div (image) */
+  overflow: hidden;
+  /* center horizontally */
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.profile_description {
+  padding-top: 22px;
+  padding-bottom: 22px;
+  /* make divider with border bottom */
+  border-bottom: 1px solid hsl(0, 0%, 90%);
+}
+
+.profile_description > * + * {
+  margin-top: 12px;
+}
+
+.profile_description > p {
+  text-align: center;
+}
+
+.profile_description > p:first-child {
+  font-weight: var(--weight-bold);
+}
+
+.profile_description > p > span,
+.profile_description > p:last-child {
+  font-weight: var(--weight-regular);
+  color: var(--dark-grayish-blue);
+}
+
+.profile_description > p:last-child {
+  font-size: 14px;
+}
+
+.profile_description > p > span {
+  margin-left: 5px;
+}
+
+
+.profile_stats {
+  padding-top: 26px;
+  padding-bottom: 24px;
+  padding-left: 22px;
+  padding-right: 22px;
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+}
+
+.profile_stats > * {
+  flex-basis: 33%;
+}
+
+.profile_stats > * > :first-child {
+  font-weight: var(--weight-bold);
+}
+
+.profile_stats > * > :last-child {
+  margin-top: 7px;
+  font-size: 10px;
+  color: var(--dark-gray);
+  letter-spacing: 0.7px;
 }
