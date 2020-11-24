@@ -14,6 +14,10 @@ class MyDocument extends Document {
           <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Spartan:wght@400;500;700&display=swap" rel="stylesheet" />
           <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap" rel="stylesheet" />
+          <style>{`
+            #__next { height: 100% }
+          `}
+          </style>
         </Head>
         <body>
           <Main />
