@@ -221,6 +221,10 @@
   fill: var(--desaturated-dark-blue);
 }
 
+.share_content_desktop {
+  display: none;
+}
+
 @media (min-width: 900px) {
   .article_preview_container {
     overflow: visible;
