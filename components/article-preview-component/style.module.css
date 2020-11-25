@@ -305,4 +305,8 @@
     left: 48%;
     transform: rotate(45deg);
   }
+
+  .sharewrapper {
+    position: relative;
+  }
 }

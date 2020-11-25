@@ -36,7 +36,7 @@ const ArticlePreviewComponentComponent = () => {
                   <p>28 Jun 2020</p>
                 </div>
               </div>
-              <button className={style.author_content_description_share_button} onClick={() => setActive(!active)}>
+              <div className={style.sharewrapper}>
                 <div className={sharecontentdesktopstyle}>
                   <div className={style.share_content_main}>
                     <p>Share</p>
@@ -48,8 +48,10 @@ const ArticlePreviewComponentComponent = () => {
                   </div>
                   <div className={style.triange}></div>
                 </div>
-                <ShareLogo />
-              </button>
+                <button className={style.author_content_description_share_button} onClick={() => setActive(!active)}>
+                  <ShareLogo />
+                </button>
+              </div>
             </div>
             <div className={sharecontentstyle}>
               <div className={style.share_content_main}>
