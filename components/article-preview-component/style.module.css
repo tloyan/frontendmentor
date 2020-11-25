@@ -127,6 +127,11 @@
   outline: none;
 }
 
+.author_content_description_share_button > svg {
+  width: 15px;
+  height: 13px;
+}
+
 .author_content_description_share_button:hover > svg > path {
   fill: white;
 }
@@ -191,6 +196,11 @@
 
 .share_content_button:focus {
   outline: none;
+}
+
+.share_content_button > svg {
+  width: 15px;
+  height: 13px;
 }
 
 .share_content_button > svg > path {
