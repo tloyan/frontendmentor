@@ -1,0 +1,16 @@
+.container {
+  --dark-blue: hsl(240, 38%, 20%);
+  --grayish-blue: hsl(240, 18%, 77%);
+  --font-family: 'Inter', sans-serif;
+  --font-size: 32px;
+  --weight-light: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  min-height: 100%;
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--weight-medium);
+
+  background-color: lawngreen;
+}
