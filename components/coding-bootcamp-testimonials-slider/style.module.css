@@ -3,7 +3,7 @@
   --grayish-blue: hsl(240, 18%, 77%);
   --font-family: 'Inter', sans-serif;
   --font-size: 32px;
-  --weight-light: 400;
+  --weight-light: 300;
   --weight-medium: 500;
   --weight-bold: 700;
 
@@ -12,5 +12,203 @@
   font-size: var(--font-size);
   font-weight: var(--weight-medium);
 
-  background-color: lawngreen;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 23px;
+  padding-right: 23px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  background-image: url('/coding-bootcamp-testimonials-slider/pattern-curve.svg');
+  background-repeat: no-repeat;
+  background-position: bottom left;
+  background-size: 285px;
+}
+
+.slider {
+  position: relative; /* needed for posiition absolute in children (slider_buttons) */
+  background-image: url('/coding-bootcamp-testimonials-slider/pattern-bg.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.slider_images {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+  width: 78%;
+}
+
+.image_wrapper {
+  width: 100%;
+  height: 100%;
+}
+
+.image_wrapper > img {
+  width: 100%;
+  height: auto;
+  opacity: 1;
+  box-shadow: 0px 13px 20px -5px hsla(240, 38%, 50%, 25%);
+}
+
+.slider_buttons {
+  position: absolute;
+  top: calc(100% - 2rem - 28.5px);
+  left: calc(50% - 28.5px);
+  background-color: transparent;
+}
+
+.slider_buttons > button {
+  width: 32px;
+  height: 32px;
+  border: none;
+  background-color: white;
+}
+
+.slider_buttons > button:focus {
+  outline: none;
+}
+
+.slider_buttons > button:first-of-type {
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+}
+
+.slider_buttons > button:last-of-type {
+  border-top-right-radius: 16px;
+  border-bottom-right-radius: 16px;
+}
+
+.slider_buttons > button > svg {
+  width: 10px;
+  height: 10px;
+}
+
+.testimonial {
+  padding-top: 25px;
+  text-align: center;
+}
+
+.testimonial > * + * {
+  margin-top: 20px;
+}
+
+.testimonial_content {
+  font-size: 18px;
+  font-weight: var(--weight-light);
+  line-height: 24px;
+  padding-left: 4px;
+  padding-right: 4px;
+  color: var(--dark-blue);
+
+  background-image: url('/coding-bootcamp-testimonials-slider/pattern-quotes.svg');
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: 60px;
+  padding-top: 25px;
+  margin-top: -25px;
+}
+
+.testimonial_author > * + * {
+  margin-top: 4px;
+}
+
+.testimonial_author_name {
+  font-size: 15px;
+  font-weight: var(--weight-bold);
+  color: var(--dark-blue);
+}
+
+.testimonial_author_job {
+  font-size: 15px;
+  font-weight: var(--weight-medium);
+  color: var(--grayish-blue);
+}
+
+@media(min-width: 1024px) {
+  .container {
+    background-size: 610px;
+  }
+
+  .testimonial_container {
+    display: flex;
+    flex-direction: row-reverse;
+  }
+
+  .slider {
+    width: 53%;
+  }
+
+  .slider_images {
+    padding-top: 4.5rem;
+    padding-bottom: 4.5rem;
+  }
+
+  .slider_buttons {
+    top: calc(100% - 4.5rem - 31.5px);
+    left: calc(25% - 28.5px);
+  }
+
+  .slider_buttons > button {
+    width: 56px;
+    height: 56px;
+  }
+
+  .slider_buttons > button:first-of-type {
+    border-top-left-radius: 28px;
+    border-bottom-left-radius: 28px;
+  }
+  
+  .slider_buttons > button:last-of-type {
+    border-top-right-radius: 28px;
+    border-bottom-right-radius: 28px;
+  }
+
+  .slider_buttons > button > svg {
+    width: 16px;
+    height: 16px;
+  }
+
+  .testimonial {
+    width: 47%;
+    z-index: 1;
+    margin-right: -12%;
+    text-align: start;
+    background-color: transparent;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    background-image: none;
+  }
+
+  .testimonial_content {
+    font-size: 32px;
+    line-height: 44px;
+
+    background-position: 100px 0px;
+    background-size: 120px;
+    padding-top: 67px;
+    margin-top: -67px;
+  }
+
+  .testimonial_author {
+    display: flex;
+  }
+
+  .testimonial_author > * {
+    font-size: 20px;
+  }
+
+  .testimonial_author > * + * {
+    margin-top: 0px;
+    margin-left: 10px;
+  }
 }
