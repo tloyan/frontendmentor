@@ -64,6 +64,7 @@
 .header > p {
   max-width: 540px;
   line-height: 25px;
+  color: var(--neutral-grayish-blue);
 }
 
 .section {
@@ -137,6 +138,7 @@
   font-size: 13px;
   font-weight: var(--weight-regular);
   line-height: 23px;
+  color: var(--neutral-grayish-blue);
 }
 
 @media(min-width: 1000px) {
