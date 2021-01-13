@@ -80,7 +80,7 @@
   justify-content: flex-start;
   align-items: flex-start;
 
-  min-height: 250px;
+  min-height: 222px;
 
   padding-top: 30px;
   padding-bottom: 30px;
@@ -145,10 +145,15 @@
   }
 
   .section {
-    padding-left: 150px;
-    padding-right: 150px;
+    align-self: center;
+    max-width: 1100px;
+  
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
+  }
+
+  .section_item {
+    min-height: 250px;
   }
 
   .section_item > svg {
