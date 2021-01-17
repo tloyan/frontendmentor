@@ -1,0 +1,241 @@
+.container {
+  --primary-red: hsl(0, 100%, 74%); 
+  --primary-green: hsl(154, 59%, 51%);
+  --accent-blue: hsl(248, 32%, 49%);
+  --neutral-dark-blue: hsl(249, 10%, 26%); 
+  --neutral-grayish-blue: hsl(246, 25%, 77%);
+
+  --font-family: 'Poppins', sans-serif;
+  --font-size: 16px;
+
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--weight-medium);
+
+  min-height: 100%;
+  display: flex;
+
+  color: white;
+  background-image: url('/intro-component-with-signup-form/bg-intro-mobile.png'), linear-gradient(0deg, var(--primary-red), var(--primary-red));
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.centered_container {
+  max-width: 550px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 24px;
+  padding-right: 24px;
+
+  padding-top: 90px;
+  padding-bottom: 70px;
+}
+
+.centered_container > * + * {
+  margin-top: 65px;
+}
+
+.description_container {
+  text-align: center;
+}
+
+.description_container > * + * {
+  margin-top: 20px;
+}
+
+.title {
+  font-size: 28px;
+  font-weight: var(--weight-bold);
+}
+
+.title > span {
+  display: block;
+}
+
+.description {
+  padding-left: 4px;
+  padding-right: 4px;
+
+  font-size: 16px;
+  line-height: 26px;
+}
+
+.main_container > * + * {
+  margin-top: 23px;
+}
+
+.promotion {
+  padding-top: 20px;
+  padding-bottom: 20px;
+
+  padding-left: 75px;
+  padding-right: 75px;
+
+  border-radius: 10px;
+
+  background-color: var(--accent-blue);
+  box-shadow: 0px 8px 0px 0px hsla(0, 0%, 0%, 15%);
+}
+
+.promotion_description {
+  font-size: 15px;
+  line-height: 26px;
+  letter-spacing: 0.27px;
+  text-align: center;
+  font-weight: var(--weight-regular);
+}
+
+.promotion_description > span {
+  font-weight: var(--weight-bold);
+}
+
+.form {
+  padding: 24px;
+
+  border-radius: 10px;
+  background-color: white;
+  box-shadow: 0px 8px 0px 0px hsla(0, 0%, 0%, 15%);
+}
+
+.form > * + * {
+  margin-top: 18px;
+}
+
+.form > button {
+  height: 55px;
+  width: 100%;
+
+  outline: none;
+  border: none;
+  border-radius: 5px;
+
+  font-size: 15px;
+  font-weight: var(--weight-semi-bold);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+
+  background-color: var(--primary-green);
+  box-shadow: inset 0px -4px 0px 0px hsla(0, 0%, 0%, 10%);
+}
+
+.form > button:active {
+  background-color: #77E2B3;
+}
+
+.form > p:last-of-type {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 11px;
+  line-height: 21px;
+  font-weight: var(--weight-regular);
+
+  color: var(--neutral-grayish-blue);
+}
+
+.form > p:last-of-type > span {
+  font-weight: var(--weight-bold);
+  color: var(--primary-red);
+}
+
+.input_wrapper {
+  position: relative;
+}
+
+.input_wrapper > input {
+  width: 100%;
+  height: 55px;
+  padding-left: 20px;
+
+  font-weight: var(--weight-semi-bold);
+
+  border: 1px solid var(--neutral-grayish-blue);
+  border-radius: 5px;
+  outline: none;
+  color: var(--neutral-dark-blue);
+}
+
+.input_wrapper > input:focus {
+  border-color: var(--accent-blue);
+}
+
+.input_wrapper > svg {
+  width: 24px;
+  position: absolute;
+  top: calc(50% - 12px - 11px);
+  right: 18px;
+}
+
+.error_message {
+  margin-top: 8px;
+  text-align: end;
+  font-size: 11px;
+  font-weight: var(--weight-medium);
+  font-style: italic;
+  color: var(--primary-red);
+}
+
+.input_wrapper > input.error_input,
+.input_wrapper > input.error_input:focus {
+  border: 2px solid var(--primary-red);
+  color: var(--primary-red);
+}
+
+@media(min-width: 1024px) {
+  .container {
+    background-image: url('/intro-component-with-signup-form/bg-intro-desktop.png'), linear-gradient(0deg, var(--primary-red), var(--primary-red));
+  }
+
+  .centered_container {
+    max-width: 1920px;
+    flex-direction: row;
+    padding-left: 165px;
+    padding-right: 165px;
+  }
+
+  .centered_container > * + * {
+    margin-top: 0px;
+  }
+
+  .description_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    text-align: start;
+  }
+
+  .title {
+    font-size: 50px;
+  }
+
+  .main_container {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .form {
+    padding: 40px;
+  }
+
+  .form > * + * {
+    margin-top: 23px;
+  }
+
+  .input_wrapper > input {
+    padding-left: 30px;
+  }
+}
