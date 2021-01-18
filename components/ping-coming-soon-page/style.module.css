@@ -1,0 +1,232 @@
+.container {
+  --primary-blue: hsl(223, 87%, 63%);
+
+  --secondary-pale-blue: hsl(223, 100%, 88%);
+  --secondary-light-red: hsl(354, 100%, 66%);
+
+  --neutral-gray: hsl(0, 0%, 59%);
+  --neutral-very-dark-blue: hsl(209, 33%, 12%);
+
+  --font-family: 'Libre Franklin', sans-serif;
+  --font-size: 20px;
+
+  --weight-light: 300;
+  --weight-semi-bold: 600;
+  --weight-bold: 700;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--weight-light);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  min-height: 100%;
+
+
+  padding-top: 50px;
+  padding-bottom: 30px;
+
+  padding-left: 28px;
+  padding-right: 28px;
+
+  background-color: white;
+}
+
+.container_centered {
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  align-items: center;
+}
+
+.header_container {
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.logo_container > svg {
+  width: 56px;
+  height: auto;
+}
+
+.title {
+  text-align: center;
+  margin-top: 45px;
+  font-size: 22px;
+  color: var(--neutral-gray);
+}
+
+.title > span {
+  font-weight: var(--weight-bold);
+  color: var(--neutral-very-dark-blue);
+}
+
+.text {
+  margin-top: 30px;
+  font-size: 12px;
+  color: var(--neutral-very-dark-blue);
+}
+
+.form {
+  margin-top: 30px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.input_wrapper {
+  width: 100%;
+}
+
+.input_wrapper > input {
+  width: 100%;
+  height: 40px;
+  padding-left: 30px;
+  font-size: 12px;
+  border: 1px solid var(--secondary-pale-blue);
+  outline: none;
+  border-radius: 20px;
+  color: var(--neutral-very-dark-blue);
+}
+
+.input_wrapper > input.input_error {
+  border: 1px solid var(--secondary-light-red);
+}
+
+.input_wrapper > input::placeholder {
+  color: var(--secondary-pale-blue);
+}
+
+.error_message {
+  padding: 10px;
+  margin-left: 30px;
+  font-size: 10px;
+  font-weight: var(--weight-light);
+  font-style: italic;
+  color: var(--secondary-light-red);
+}
+
+.form > button {
+  margin-top: 10px;
+  width: 100%;
+  height: 40px;
+  font-size: 12px;
+
+  font-weight: var(--weight-semi-bold);
+  text-align: center;
+
+  border: none;
+  outline: none;
+  border-radius: 20px;
+  color: white;
+  background-color: var(--primary-blue);
+
+  box-shadow: 0px 5px 10px 2px hsla(223, 87%, 63%, 25%);
+}
+
+.form > button:active {
+  background-color: hsl(223, 87%, 70%);
+}
+
+.form > button:active {
+  background-color: hsl(223, 87%, 70%);
+  box-shadow: none;
+}
+
+.illustration_image_wrapper {
+  margin-top: 68px;
+}
+
+.illustration_image_wrapper > img {
+  max-width: 100%;
+  height: auto;
+}
+
+.share_container {
+  margin-top: 120px;
+}
+
+.share_container > * + * {
+  margin-left: 13px;
+}
+
+.share_container > button {
+  width: 32px;
+  height: 32px;
+
+  border: 1px solid var(--secondary-pale-blue);
+  outline: none;
+  border-radius: 16px;
+
+  color: var(--primary-blue);
+}
+
+.share_container > button:hover {
+  border: none;
+  color: white;
+  background-color: var(--primary-blue);
+}
+
+.copyright_text {
+  margin-top: 26px;
+  font-size: 10px;
+  color: var(--neutral-gray);
+}
+
+@media(min-width: 800px) {
+  .container_centered {
+    width: 640px;
+    /* width: 46.3%; */ /* This is something for futur experience. Also try margin with percentage for responsive ;) */
+  }
+
+  .logo_container > svg {
+    width: 90px;
+  }
+
+  .title {
+    font-size: 48px;
+  }
+
+  .text {
+    font-size: 20px;
+  }
+
+  .form {
+    margin-top: 40px;
+    flex-direction: row;
+    align-items: flex-start;
+    height: 96px;
+  }
+
+  .input_wrapper > input {
+    height: 56px;
+    border-radius: 28px;
+    font-size: 16px;
+  }
+
+  .form > button {
+    width: 200px;
+    height: 56px;
+    margin: 0px;
+    margin-left: 10px;
+    border-radius: 28px;
+    font-size: 16px;
+  }
+
+  .illustration_image_wrapper {
+    margin-top: 48px;
+  }
+
+  .copyright_text {
+    font-size: 12px;
+  }
+}
