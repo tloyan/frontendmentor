@@ -197,6 +197,7 @@
   }
 
   .text {
+    margin-top: 24px;
     font-size: 20px;
   }
 
@@ -224,6 +225,11 @@
 
   .illustration_image_wrapper {
     margin-top: 48px;
+  }
+
+
+  .share_container {
+    margin-top: 68px;
   }
 
   .copyright_text {
