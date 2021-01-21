@@ -123,6 +123,10 @@
   width: 28px;
   height: 28px;
 
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
   outline: none;
   border: 1px solid white;
   border-radius: 14px;
