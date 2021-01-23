@@ -1,0 +1,294 @@
+.container {
+  --color-primary-green: hsl(157, 74%, 62%);
+  --color-primary-grey: hsl(225, 26%, 23%);
+  --color-primary-dark: hsl(224, 35%, 11%);
+  --color-primary-white: hsl(0, 0%, 100%);
+
+
+  --color-secondary-grey: hsl(225, 21%, 45%);
+  --color-secondary-light-grey: hsl(225, 40%, 83%);
+  --color-secondary-green: hsl(157, 100%, 85%);
+  --color-secondary-red: hsl(0, 96%, 61%);
+
+  --font-family: 'Chivo', sans-serif;
+  --font-size: 15px;
+
+  --weight-light: 300;
+  --weight-bold: 700;
+  --weight-black: 900;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--weight-light);
+
+  min-height: 100%;
+
+  display: flex;
+  justify-content: center;
+
+  background-color: var(--color-primary-dark);
+  background-image: linear-gradient(hsla(224, 35%, 11%, 90%), hsla(224, 35%, 11%, 90%)), url('/pod-request-access-landing-page/image-host-mobile.jpg');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  background-blend-mode: normal;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  background-color: transparent;
+}
+
+.main {
+  margin-top: 55px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+
+.main > h1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 26px;
+  line-height: 38px;
+  color: var(--color-primary-white);
+}
+
+.main > h1 > span:first-of-type {
+  color: var(--color-primary-green);
+}
+
+.main > p {
+  margin-top: 16px;
+
+  text-align: center;
+  max-width: 35ch;
+
+  font-size: 15px;
+  line-height: 25px;
+  color: var(--color-secondary-light-grey);
+}
+
+.input_container {
+  margin-top: 52px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+  order: 1;
+}
+
+.input_container > * {
+  height: 46px;
+  outline: none;
+  border: none;
+  border-radius: 24px;
+
+  font-size: 14px;
+  font-weight: var(--weight-bold);
+}
+
+.input_container > input {
+  padding-left: 34px;
+  color: var(--color-primary-white);
+  background-color: var(--color-primary-grey);
+}
+
+.input_container > input::placeholder {
+  color: hsl(0, 0%, 100%, 50%);
+}
+
+.input_container > button {
+  margin-top: 16px;
+
+  color: var(--color-primary-dark);
+  background-color: var(--color-primary-green);
+}
+
+.input_container > button:hover {
+  background-color: var(--color-secondary-green);
+}
+
+.error_message {
+  height: auto;
+  padding-top: 5px;
+  padding-left: 34px;
+  font-size: 12px;
+  color: var(--color-secondary-red);
+}
+
+.icon_container {
+  margin-top: 33px;
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.icon_container > svg:first-of-type {
+  height: auto;
+  width: 56px;
+}
+
+.icon_container > svg:nth-of-type(2) {
+  height: auto;
+  width: 45px;
+}
+
+.icon_container > svg:nth-of-type(3) {
+  height: auto;
+  width: 73px;
+}
+
+.icon_container > svg:last-of-type {
+  height: auto;
+  width: 77px;
+}
+
+
+
+@media(min-width: 768px) {
+  .container {
+    justify-content: stretch;
+
+    background-image: url('/pod-request-access-landing-page/bg-pattern-dots.svg'), url('/pod-request-access-landing-page/image-host-tablet.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: 30px bottom, right top;
+    background-size: auto;
+
+    background-size: auto, auto 75%;
+
+    padding-top: 5vh;
+    padding-left: 5vw;
+  }
+
+  .wrapper {
+    margin-bottom: 25vh;
+    justify-content: space-between;
+    align-items: stretch;
+  }
+
+  .main {
+    margin-top: 0px;
+
+    width: 635px;
+    height: 509px;
+    background-color: var(--color-primary-dark);
+
+    justify-content: flex-end;
+    align-items: stretch;
+  }
+
+  .main > h1 {
+    margin-bottom: 30px;
+
+    justify-content: stretch;
+    align-items: stretch;
+
+    text-align: start;
+
+    font-size: 48px;
+    line-height: 56px;
+  }
+
+  .main > p {
+    margin-top: 0px;
+    margin-bottom: 40px;
+
+    text-align: start;
+
+    font-size: 18px;
+    line-height: 28px;
+
+    max-width: 40ch;
+  }
+
+  .input_container {
+    margin-top: 0px;
+
+    margin-bottom: 40px;
+    height: 80px;
+    position: relative;
+    display: block;
+    order: initial;
+  }
+
+  .input_container > input {
+    width: 427px;
+    height: 56px;
+    border-radius: 28px;
+  }
+
+  .input_container > button {
+    width: 162px;
+    margin-top: 0px;
+    position: absolute;
+    top: 5px;
+    left: 260px;
+  }
+
+  .icon_container {
+    margin-top: 0px;
+
+    width: 540px;
+    justify-content: space-between;
+  }
+
+  .icon_container > svg:first-of-type {
+    height: auto;
+    width: 96px;
+  }
+  
+  .icon_container > svg:nth-of-type(2) {
+    height: auto;
+    width: 78px;
+  }
+  
+  .icon_container > svg:nth-of-type(3) {
+    height: auto;
+    width: 125px;
+  }
+  
+  .icon_container > svg:last-of-type {
+    height: auto;
+    width: 129px;
+  }
+}
+
+@media(min-width: 1440px) {
+  .container {
+    background-image: url('/pod-request-access-landing-page/bg-pattern-dots.svg'), url('/pod-request-access-landing-page/image-host-desktop.jpg');
+    background-repeat: no-repeat, no-repeat;
+    background-position: right calc((50% + 35% + 4.5%)), right center;
+    background-size: auto;
+    background-size: auto 11.5%, auto 70%;
+
+    padding-left: 11.5vw;
+    padding-top: calc(15vh - 29.5px);
+  }
+
+  .wrapper {
+    margin-bottom: 15vh;
+  }
+
+  .main {
+    width: 723px;
+  }
+
+  .main > h1 {
+    font-size: 52px;
+    line-height: 62px;
+  }
+}
