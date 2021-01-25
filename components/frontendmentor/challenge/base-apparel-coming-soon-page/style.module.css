@@ -1,0 +1,224 @@
+.container {
+  --primary-desaturated-red: hsl(0, 36%, 70%);
+  --primary-soft-red: hsl(0, 93%, 68%);
+  --neutral-dark-grayish-red: hsl(0, 6%, 24%);
+
+  --background-gradient-neutral: linear-gradient(135deg, hsl(0, 0%, 100%), hsl(0, 100%, 98%));
+  --background-gradient-primary: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
+
+  --font-family: 'Josefin Sans', sans-serif;
+  --font-size: 16px;
+
+  --weight-light: 300;
+  --weight-regular: 400;
+  --weight-semi-bold: 600;
+
+  min-height: 100%;
+  height: auto;
+
+  font-family: var(--font-family);
+  font-size: var(--font-size);
+  font-weight: var(--weight-regular);
+
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+
+}
+
+.main_content {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: stretch;
+  background-image: var(--background-gradient-neutral);
+}
+
+.main_content_header {
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 30px;
+}
+
+.main_content_header > img {
+  height: 22px;
+}
+
+.image_mobile_wrapper > img {
+  width: 100%;
+  height: auto;
+}
+
+.main_content_content {
+  margin-top: auto;
+  margin-bottom: auto;
+
+  padding-left: 30px;
+  padding-right: 30px;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  text-align: center;
+}
+
+.main_content_content > * + * {
+  margin-top: 30px;
+}
+
+.content_title {
+  font-size: 40px;
+  letter-spacing: 11px;
+}
+
+.content_title > span {
+  font-weight: var(--weight-semi-bold);
+  display: block;
+  text-transform: uppercase;
+
+  color: var(--neutral-dark-grayish-red);
+}
+
+.content_title > span:first-of-type {
+  font-weight: var(--weight-light);
+  color: var(--primary-desaturated-red);
+}
+
+.content_description {
+  font-size: 14px;
+  line-height: 22px;
+  color: var(--primary-desaturated-red);
+}
+
+.content_input {
+  width: 100%;
+  padding-bottom: 18px;
+}
+
+.content_input.input_error_email {
+  padding-bottom: 0px;
+}
+
+.input_wrapper {
+  position: relative;
+  width: 100%;
+}
+
+.input_wrapper > input {
+  width: 100%;
+  padding: 16.5px;
+  border-radius: 25px;
+
+  outline: none;
+  border: 2px solid var(--primary-desaturated-red);
+}
+
+.input_wrapper > input.input_error_email {
+  border-color: var(--primary-soft-red);
+}
+
+.input_wrapper > input::placeholder {
+  color: var(--primary-desaturated-red);
+}
+
+.input_wrapper > svg {
+  position: absolute;
+  right: 70px;
+  top: calc(50% - 12px);
+}
+
+.input_wrapper > button {
+  position: absolute;
+  height: 100%;
+  width: 64px;
+
+  border: none;
+  background-image: var(--background-gradient-primary);
+
+  border-radius: 25px;
+  outline: none;
+  right: 0;
+
+  box-shadow: 0px 15px 15px 0px hsla(0, 36%, 70%, 41%);
+}
+
+.input_wrapper > button:active {
+  background-image: linear-gradient(135deg, hsla(0, 0%, 100%, 50%), hsla(0, 0%, 100%, 50%)), var(--background-gradient-primary);
+}
+
+.input_error {
+  padding-top: 5px;
+  padding-left: 17px;
+  text-align: start;
+  font-size: 13px;
+  color: var(--primary-soft-red);
+}
+
+.image_desktop_wrapper {
+  display: none;
+}
+
+@media(min-width: 1024px) {
+  .container {
+    height: 100%
+  }
+
+  .main_content {
+    align-items: center;
+    background-image: url("/frontendmentor/challenge/base-apparel-coming-soon-page/bg-pattern-desktop.svg"), var(--background-gradient-neutral);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+  }
+
+  .main_content_header {
+    width: 445px;
+    padding-left: 30px;
+    padding-top: 50px;
+  }
+
+  .main_content_header > img {
+    height: 33px;
+  }
+
+  .main_content_content {
+    max-width: 445px;
+    text-align: start;
+
+    align-items: flex-start;
+  }
+
+  .content_title {
+    font-size: 64px;
+    letter-spacing: 17.5px;
+  }
+
+  .image_mobile_wrapper {
+    display: none;
+  }
+
+  .input_wrapper > input {
+    padding: 19.5px;
+    border-radius: 30px;
+  }
+
+  .input_wrapper > svg {
+    right: 110px;
+  }
+
+  .input_wrapper > button {
+    width: 100px;
+    border-radius: 30px;
+  }
+
+  .image_desktop_wrapper {
+    display: block;
+    height: 100%;
+  }
+
+  .image_desktop_wrapper > img {
+    height: 100%;
+    width: auto;
+  }
+}
