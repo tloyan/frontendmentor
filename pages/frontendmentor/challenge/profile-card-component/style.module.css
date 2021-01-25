@@ -8,6 +8,7 @@
   --weight-regular: 400; 
   --weight-bold: 700;
 
+  font-size: 1.6rem;
   font-family: var(--font-family);
   font-weight: var(--weight-regular);
 

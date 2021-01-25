@@ -5,6 +5,11 @@
 	color: inherit;
 }
 
+html {
+	font-size: .625em; /* fallback IE8+ */
+  font-size: calc(1em * .625); /* IE9-IE11 math fixing. See http://bit.ly/1g4X0bX */
+}
+
 html, body {
 	height: 100%;
 	width: 100%;
