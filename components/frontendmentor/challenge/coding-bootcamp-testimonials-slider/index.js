@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 
-import IconNext from '../../../../public/frontendmentor/challenge/coding-bootcamp-testimonials-slider/icon-next.svg';
-import IconPrev from '../../../../public/frontendmentor/challenge/coding-bootcamp-testimonials-slider/icon-prev.svg';
+import IconNext from 'public/frontendmentor/challenge/coding-bootcamp-testimonials-slider/icon-next.svg';
+import IconPrev from 'public/frontendmentor/challenge/coding-bootcamp-testimonials-slider/icon-prev.svg';
 
 import style from './style.module.css';
 

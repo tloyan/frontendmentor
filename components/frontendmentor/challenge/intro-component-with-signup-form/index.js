@@ -2,7 +2,7 @@ import { Fragment } from 'react';
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-import IconError from '../../../../public/frontendmentor/challenge/intro-component-with-signup-form/icon-error.svg';
+import IconError from 'public/frontendmentor/challenge/intro-component-with-signup-form/icon-error.svg';
 import style from './style.module.css';
 
 const IntroComponentWithSignupFormComponent = () => {

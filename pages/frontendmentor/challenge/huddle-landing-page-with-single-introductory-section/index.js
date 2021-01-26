@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import HuddleLandingPageWithSingleIntroductorySectionComponent from '../../../../components/frontendmentor/challenge/huddle-landing-page-with-single-introductory-section';
+import HuddleLandingPageWithSingleIntroductorySectionComponent from 'components/frontendmentor/challenge/huddle-landing-page-with-single-introductory-section';
 
 const HuddleLandingPageWithSingleIntroductorySectionPage = () => (
   <Fragment>

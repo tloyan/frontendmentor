@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import ProfileCardComponentComponent from '../../../../components/frontendmentor/challenge/profile-card-component';
+import ProfileCardComponentComponent from 'components/frontendmentor/challenge/profile-card-component';
 
 import style from './style.module.css';
 

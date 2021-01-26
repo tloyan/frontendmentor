@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import ArticlePreviewComponentComponent from '../../../../components/frontendmentor/challenge/article-preview-component';
+import ArticlePreviewComponentComponent from 'components/frontendmentor/challenge/article-preview-component';
 
 import style from './style.module.css';
 

@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import SocialProofSectionComponent from '../../../../components/frontendmentor/challenge/social-proof-section';
+import SocialProofSectionComponent from 'components/frontendmentor/challenge/social-proof-section';
 
 import style from './style.module.css';
 

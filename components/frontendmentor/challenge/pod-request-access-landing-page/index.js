@@ -1,11 +1,11 @@
 import { Formik } from 'formik';
 import * as Yup from 'yup';
 
-import Logo from '../../../../public/frontendmentor/challenge/pod-request-access-landing-page/logo.svg';
-import SpotifyIcon from '../../../../public/frontendmentor/challenge/pod-request-access-landing-page/spotify.svg';
-import ApplePodcastIcon from '../../../../public/frontendmentor/challenge/pod-request-access-landing-page/apple-podcast.svg';
-import GooglePodcastIcon from '../../../../public/frontendmentor/challenge/pod-request-access-landing-page/google-podcasts.svg';
-import PocketcastsIcon from '../../../../public/frontendmentor/challenge/pod-request-access-landing-page/pocket-casts.svg';
+import Logo from 'public/frontendmentor/challenge/pod-request-access-landing-page/logo.svg';
+import SpotifyIcon from 'public/frontendmentor/challenge/pod-request-access-landing-page/spotify.svg';
+import ApplePodcastIcon from 'public/frontendmentor/challenge/pod-request-access-landing-page/apple-podcast.svg';
+import GooglePodcastIcon from 'public/frontendmentor/challenge/pod-request-access-landing-page/google-podcasts.svg';
+import PocketcastsIcon from 'public/frontendmentor/challenge/pod-request-access-landing-page/pocket-casts.svg';
 
 import style from './style.module.css';
 

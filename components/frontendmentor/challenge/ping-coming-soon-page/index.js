@@ -3,7 +3,7 @@ import * as Yup from 'yup';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faTwitter, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import Logo from '../../../../public/frontendmentor/challenge/ping-coming-soon-page/logo.svg';
+import Logo from 'public/frontendmentor/challenge/ping-coming-soon-page/logo.svg';
 
 import style from './style.module.css';
 

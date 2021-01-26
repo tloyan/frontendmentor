@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import BaseApparelComingSoonPageComponent from '../../../../components/frontendmentor/challenge/base-apparel-coming-soon-page';
+import BaseApparelComingSoonPageComponent from 'components/frontendmentor/challenge/base-apparel-coming-soon-page';
 
 const BaseApparelComingSoonPagePage = () => (
   <Fragment>

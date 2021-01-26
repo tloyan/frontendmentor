@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import SinglePriceGridComponentComponent from '../../../../components/frontendmentor/challenge/single-price-grid-component';
+import SinglePriceGridComponentComponent from 'components/frontendmentor/challenge/single-price-grid-component';
 
 const SinglePriceGridComponentPage = () => (
   <Fragment>

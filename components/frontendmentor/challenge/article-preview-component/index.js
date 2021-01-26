@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import ShareLogo from '../../../../public/frontendmentor/challenge/article-preview-component/icon-share.svg';
+import ShareLogo from 'public/frontendmentor/challenge/article-preview-component/icon-share.svg';
 import style from './style.module.css';
 
 const ArticlePreviewComponentComponent = () => {

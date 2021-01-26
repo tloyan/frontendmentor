@@ -1,7 +1,7 @@
-import IconCalculator from '../../../../public/frontendmentor/challenge/four-card-feature-section/icon-calculator.svg';
-import IconKarma from '../../../../public/frontendmentor/challenge/four-card-feature-section/icon-karma.svg';
-import IconSupervisor from '../../../../public/frontendmentor/challenge/four-card-feature-section/icon-supervisor.svg';
-import IconTeamBuilder from '../../../../public/frontendmentor/challenge/four-card-feature-section/icon-team-builder.svg';
+import IconCalculator from 'public/frontendmentor/challenge/four-card-feature-section/icon-calculator.svg';
+import IconKarma from 'public/frontendmentor/challenge/four-card-feature-section/icon-karma.svg';
+import IconSupervisor from 'public/frontendmentor/challenge/four-card-feature-section/icon-supervisor.svg';
+import IconTeamBuilder from 'public/frontendmentor/challenge/four-card-feature-section/icon-team-builder.svg';
 import style from './style.module.css';
 
 const FourCardFeatureSectionComponent = () => (

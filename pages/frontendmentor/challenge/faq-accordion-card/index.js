@@ -1,7 +1,6 @@
-import { Fragment } from 'react';
 import Head from 'next/head';
 
-import FaqAccordionCardComponent from '../../../../components/frontendmentor/challenge/faq-accordion-card';
+import FaqAccordionCardComponent from 'components/frontendmentor/challenge/faq-accordion-card';
 
 import style from './style.module.css';
 

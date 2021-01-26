@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import PingComingSoonPageComponent from '../../../../components/frontendmentor/challenge/ping-coming-soon-page';
+import PingComingSoonPageComponent from 'components/frontendmentor/challenge/ping-coming-soon-page';
 
 const PingComingSoonPagePage = () => (
   <Fragment>

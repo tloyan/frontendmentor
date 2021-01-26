@@ -1,7 +1,7 @@
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faTwitter, faFacebookF, faInstagram } from '@fortawesome/free-brands-svg-icons';
 
-import Logo from '../../../../public/frontendmentor/challenge/huddle-landing-page-with-single-introductory-section/logo.svg';
+import Logo from 'public/frontendmentor/challenge/huddle-landing-page-with-single-introductory-section/logo.svg';
 
 import style from './style.module.css';
 
