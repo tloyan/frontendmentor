@@ -2,8 +2,8 @@
   width: 100vw;
   height: 100vh;
   /* minimum space between profile card container and screen border */
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   /* vertical centering */
   display: flex;
   flex-direction: column;
@@ -20,22 +20,22 @@
 .profile_card_container {
   width: 100%;
   /* fix the max-width because background image is not design to be repeat */
-  max-width: 350px;
+  max-width: 35rem;
   /* horizontal centering */
   margin-left: auto;
   margin-right: auto;
 
-  border-radius: 10px;
+  border-radius: 1rem;
   /* hide what's coming out of the container (profile_image_container background) */
   overflow: hidden;
   background-color: white;
 }
 
 .profile_image_container {
-  --background-height: 140px;
-  --image-height: 96px;
-  --image-width: 96px;
-  --image-border-size: 5px;
+  --background-height: 14rem;
+  --image-height: 9.6rem;
+  --image-width: 9.6rem;
+  --image-border-size: .5rem;
   height: calc(var(--background-height) + (var(--image-height) / 2) + (var(--image-border-size)));
 
   background-image: url("/frontendmentor/challenge/profile-card-component/bg-pattern-card.svg");
@@ -60,14 +60,14 @@
 }
 
 .profile_description {
-  padding-top: 22px;
-  padding-bottom: 22px;
+  padding-top: 2.2rem;
+  padding-bottom: 2.2rem;
   /* make divider with border bottom */
-  border-bottom: 1px solid hsl(0, 0%, 90%);
+  border-bottom: .1rem solid hsl(0, 0%, 90%);
 }
 
 .profile_description > * + * {
-  margin-top: 12px;
+  margin-top: 1.2rem;
 }
 
 .profile_description > p {
@@ -85,19 +85,19 @@
 }
 
 .profile_description > p:last-child {
-  font-size: 14px;
+  font-size: 1.4rem;
 }
 
 .profile_description > p > span {
-  margin-left: 5px;
+  margin-left: .5rem;
 }
 
 
 .profile_stats {
-  padding-top: 26px;
-  padding-bottom: 24px;
-  padding-left: 22px;
-  padding-right: 22px;
+  padding-top: 2.6rem;
+  padding-bottom: 2.4rem;
+  padding-left: 2.2rem;
+  padding-right: 2.2rem;
   display: flex;
   justify-content: space-between;
   text-align: center;
@@ -112,8 +112,8 @@
 }
 
 .profile_stats > * > :last-child {
-  margin-top: 7px;
-  font-size: 10px;
+  margin-top: .7rem;
+  font-size: 1rem;
   color: var(--dark-gray);
-  letter-spacing: 0.7px;
+  letter-spacing: .07rem;
 }

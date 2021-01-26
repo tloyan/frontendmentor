@@ -6,7 +6,7 @@
   --neutral-grayish-blue: hsl(246, 25%, 77%);
 
   --font-family: 'Poppins', sans-serif;
-  --font-size: 16px;
+  --font-size: 1.6rem;
 
   --weight-regular: 400;
   --weight-medium: 500;
@@ -27,7 +27,7 @@
 }
 
 .centered_container {
-  max-width: 550px;
+  max-width: 55rem;
   min-height: 100%;
   display: flex;
   flex-direction: column;
@@ -35,15 +35,15 @@
 
   margin-left: auto;
   margin-right: auto;
-  padding-left: 24px;
-  padding-right: 24px;
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 
-  padding-top: 90px;
-  padding-bottom: 70px;
+  padding-top: 9rem;
+  padding-bottom: 7rem;
 }
 
 .centered_container > * + * {
-  margin-top: 65px;
+  margin-top: 6.5rem;
 }
 
 .description_container {
@@ -51,11 +51,11 @@
 }
 
 .description_container > * + * {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .title {
-  font-size: 28px;
+  font-size: 2.8rem;
   font-weight: var(--weight-bold);
 }
 
@@ -64,34 +64,34 @@
 }
 
 .description {
-  padding-left: 4px;
-  padding-right: 4px;
+  padding-left: .4rem;
+  padding-right: .4rem;
 
-  font-size: 16px;
-  line-height: 26px;
+  font-size: 1.6rem;
+  line-height: 2.6rem;
 }
 
 .main_container > * + * {
-  margin-top: 23px;
+  margin-top: 2.3rem;
 }
 
 .promotion {
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
-  padding-left: 75px;
-  padding-right: 75px;
+  padding-left: 7.5rem;
+  padding-right: 7.5rem;
 
-  border-radius: 10px;
+  border-radius: 1rem;
 
   background-color: var(--accent-blue);
-  box-shadow: 0px 8px 0px 0px hsla(0, 0%, 0%, 15%);
+  box-shadow: 0rem .8rem 0rem 0rem hsla(0, 0%, 0%, 15%);
 }
 
 .promotion_description {
-  font-size: 15px;
-  line-height: 26px;
-  letter-spacing: 0.27px;
+  font-size: 1.5rem;
+  line-height: 2.6rem;
+  letter-spacing: .027rem;
   text-align: center;
   font-weight: var(--weight-regular);
 }
@@ -101,32 +101,32 @@
 }
 
 .form {
-  padding: 24px;
+  padding: 2.4rem;
 
-  border-radius: 10px;
+  border-radius: 1rem;
   background-color: white;
-  box-shadow: 0px 8px 0px 0px hsla(0, 0%, 0%, 15%);
+  box-shadow: 0rem .8rem 0rem 0rem hsla(0, 0%, 0%, 15%);
 }
 
 .form > * + * {
-  margin-top: 18px;
+  margin-top: 1.8rem;
 }
 
 .form > button {
-  height: 55px;
+  height: 5.5rem;
   width: 100%;
 
   outline: none;
   border: none;
-  border-radius: 5px;
+  border-radius: .5rem;
 
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: var(--weight-semi-bold);
-  letter-spacing: 1px;
+  letter-spacing: .1rem;
   text-transform: uppercase;
 
   background-color: var(--primary-green);
-  box-shadow: inset 0px -4px 0px 0px hsla(0, 0%, 0%, 10%);
+  box-shadow: inset 0rem -0.4rem 0rem 0rem hsla(0, 0%, 0%, 10%);
 }
 
 .form > button:active {
@@ -134,10 +134,10 @@
 }
 
 .form > p:last-of-type {
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
-  font-size: 11px;
-  line-height: 21px;
+  font-size: 1.1rem;
+  line-height: 2.1rem;
   font-weight: var(--weight-regular);
 
   color: var(--neutral-grayish-blue);
@@ -154,13 +154,13 @@
 
 .input_wrapper > input {
   width: 100%;
-  height: 55px;
-  padding-left: 20px;
+  height: 5.5rem;
+  padding-left: 2rem;
 
   font-weight: var(--weight-semi-bold);
 
-  border: 1px solid var(--neutral-grayish-blue);
-  border-radius: 5px;
+  border: .1rem solid var(--neutral-grayish-blue);
+  border-radius: .5rem;
   outline: none;
   color: var(--neutral-dark-blue);
 }
@@ -170,16 +170,16 @@
 }
 
 .input_wrapper > svg {
-  width: 24px;
+  width: 2.4rem;
   position: absolute;
-  top: calc(50% - 12px - 11px);
-  right: 18px;
+  top: calc(50% - 1.2rem - 1.1rem);
+  right: 1.8rem;
 }
 
 .error_message {
-  margin-top: 8px;
+  margin-top: .8rem;
   text-align: end;
-  font-size: 11px;
+  font-size: 1.1rem;
   font-weight: var(--weight-medium);
   font-style: italic;
   color: var(--primary-red);
@@ -187,7 +187,7 @@
 
 .input_wrapper > input.error_input,
 .input_wrapper > input.error_input:focus {
-  border: 2px solid var(--primary-red);
+  border: .2rem solid var(--primary-red);
   color: var(--primary-red);
 }
 
@@ -197,14 +197,14 @@
   }
 
   .centered_container {
-    max-width: 1920px;
+    max-width: 192rem;
     flex-direction: row;
-    padding-left: 165px;
-    padding-right: 165px;
+    padding-left: 16.5rem;
+    padding-right: 16.5rem;
   }
 
   .centered_container > * + * {
-    margin-top: 0px;
+    margin-top: 0rem;
   }
 
   .description_container {
@@ -217,7 +217,7 @@
   }
 
   .title {
-    font-size: 50px;
+    font-size: 5rem;
   }
 
   .main_container {
@@ -228,14 +228,14 @@
   }
 
   .form {
-    padding: 40px;
+    padding: 4rem;
   }
 
   .form > * + * {
-    margin-top: 23px;
+    margin-top: 2.3rem;
   }
 
   .input_wrapper > input {
-    padding-left: 30px;
+    padding-left: 3rem;
   }
 }

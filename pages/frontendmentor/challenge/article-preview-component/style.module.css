@@ -8,7 +8,7 @@
   --font-family: 'Manrope', sans-serif;
   --weight-medium: 500;
   --weight-bold: 700;
-  --font-size: 13px;
+  --font-size: 1.3rem;
 
   font-family: var(--font-family);
   font-weight: var(--weight-medium);

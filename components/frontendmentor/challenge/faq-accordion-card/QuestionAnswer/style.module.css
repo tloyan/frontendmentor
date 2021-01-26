@@ -1,6 +1,6 @@
 .question_answer {
   --space: var(--s0);
-  --font-size: 12px;
+  --font-size: 1.2rem;
   overflow: hidden;
   max-height: calc((var(--space) * 2) + var(--font-size));
   transition: max-height .5s ease-out;

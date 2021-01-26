@@ -8,7 +8,7 @@
   --neutral-very-dark-blue: hsl(209, 33%, 12%);
 
   --font-family: 'Libre Franklin', sans-serif;
-  --font-size: 20px;
+  --font-size: 2rem;
 
   --weight-light: 300;
   --weight-semi-bold: 600;
@@ -26,11 +26,11 @@
   min-height: 100%;
 
 
-  padding-top: 50px;
-  padding-bottom: 30px;
+  padding-top: 5rem;
+  padding-bottom: 3rem;
 
-  padding-left: 28px;
-  padding-right: 28px;
+  padding-left: 2.8rem;
+  padding-right: 2.8rem;
 
   background-color: white;
 }
@@ -52,14 +52,14 @@
 
 
 .logo_container > svg {
-  width: 56px;
+  width: 5.6rem;
   height: auto;
 }
 
 .title {
   text-align: center;
-  margin-top: 45px;
-  font-size: 22px;
+  margin-top: 4.5rem;
+  font-size: 2.2rem;
   color: var(--neutral-gray);
 }
 
@@ -69,13 +69,13 @@
 }
 
 .text {
-  margin-top: 30px;
-  font-size: 12px;
+  margin-top: 3rem;
+  font-size: 1.2rem;
   color: var(--neutral-very-dark-blue);
 }
 
 .form {
-  margin-top: 30px;
+  margin-top: 3rem;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -89,17 +89,17 @@
 
 .input_wrapper > input {
   width: 100%;
-  height: 40px;
-  padding-left: 30px;
-  font-size: 12px;
-  border: 1px solid var(--secondary-pale-blue);
+  height: 4rem;
+  padding-left: 3rem;
+  font-size: 1.2rem;
+  border: .1rem solid var(--secondary-pale-blue);
   outline: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   color: var(--neutral-very-dark-blue);
 }
 
 .input_wrapper > input.input_error {
-  border: 1px solid var(--secondary-light-red);
+  border: .1rem solid var(--secondary-light-red);
 }
 
 .input_wrapper > input::placeholder {
@@ -107,30 +107,30 @@
 }
 
 .error_message {
-  padding: 10px;
-  margin-left: 30px;
-  font-size: 10px;
+  padding: 1rem;
+  margin-left: 3rem;
+  font-size: 1rem;
   font-weight: var(--weight-light);
   font-style: italic;
   color: var(--secondary-light-red);
 }
 
 .form > button {
-  margin-top: 10px;
+  margin-top: 1rem;
   width: 100%;
-  height: 40px;
-  font-size: 12px;
+  height: 4rem;
+  font-size: 1.2rem;
 
   font-weight: var(--weight-semi-bold);
   text-align: center;
 
   border: none;
   outline: none;
-  border-radius: 20px;
+  border-radius: 2rem;
   color: white;
   background-color: var(--primary-blue);
 
-  box-shadow: 0px 5px 10px 2px hsla(223, 87%, 63%, 25%);
+  box-shadow: 0rem .5rem 1rem .2rem hsla(223, 87%, 63%, 25%);
 }
 
 .form > button:active {
@@ -143,7 +143,7 @@
 }
 
 .illustration_image_wrapper {
-  margin-top: 68px;
+  margin-top: 6.8rem;
 }
 
 .illustration_image_wrapper > img {
@@ -152,20 +152,20 @@
 }
 
 .share_container {
-  margin-top: 120px;
+  margin-top: 12rem;
 }
 
 .share_container > * + * {
-  margin-left: 13px;
+  margin-left: 1.3rem;
 }
 
 .share_container > button {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
 
-  border: 1px solid var(--secondary-pale-blue);
+  border: .1rem solid var(--secondary-pale-blue);
   outline: none;
-  border-radius: 16px;
+  border-radius: 1.6rem;
 
   color: var(--primary-blue);
 }
@@ -177,62 +177,62 @@
 }
 
 .copyright_text {
-  margin-top: 26px;
-  font-size: 10px;
+  margin-top: 2.6rem;
+  font-size: 1rem;
   color: var(--neutral-gray);
 }
 
 @media(min-width: 800px) {
   .container_centered {
-    width: 640px;
+    width: 64rem;
     /* width: 46.3%; */ /* This is something for futur experience. Also try margin with percentage for responsive ;) */
   }
 
   .logo_container > svg {
-    width: 90px;
+    width: 9rem;
   }
 
   .title {
-    font-size: 48px;
+    font-size: 4.8rem;
   }
 
   .text {
-    margin-top: 24px;
-    font-size: 20px;
+    margin-top: 2.4rem;
+    font-size: 2rem;
   }
 
   .form {
-    margin-top: 40px;
+    margin-top: 4rem;
     flex-direction: row;
     align-items: flex-start;
-    height: 96px;
+    height: 9.6rem;
   }
 
   .input_wrapper > input {
-    height: 56px;
-    border-radius: 28px;
-    font-size: 16px;
+    height: 5.6rem;
+    border-radius: 2.8rem;
+    font-size: 1.6rem;
   }
 
   .form > button {
-    width: 200px;
-    height: 56px;
-    margin: 0px;
-    margin-left: 10px;
-    border-radius: 28px;
-    font-size: 16px;
+    width: 20rem;
+    height: 5.6rem;
+    margin: 0rem;
+    margin-left: 1rem;
+    border-radius: 2.8rem;
+    font-size: 1.6rem;
   }
 
   .illustration_image_wrapper {
-    margin-top: 48px;
+    margin-top: 4.8rem;
   }
 
 
   .share_container {
-    margin-top: 68px;
+    margin-top: 6.8rem;
   }
 
   .copyright_text {
-    font-size: 12px;
+    font-size: 1.2rem;
   }
 }

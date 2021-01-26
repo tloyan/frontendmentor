@@ -2,7 +2,7 @@
   --dark-blue: hsl(240, 38%, 20%);
   --grayish-blue: hsl(240, 18%, 77%);
   --font-family: 'Inter', sans-serif;
-  --font-size: 32px;
+  --font-size: 3.2rem;
   --weight-light: 300;
   --weight-medium: 500;
   --weight-bold: 700;
@@ -16,15 +16,15 @@
   flex-direction: column;
   justify-content: center;
 
-  padding-left: 23px;
-  padding-right: 23px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding-left: 2.3rem;
+  padding-right: 2.3rem;
+  padding-top: 2rem;
+  padding-bottom: 2rem;
 
   background-image: url('/frontendmentor/challenge/coding-bootcamp-testimonials-slider/pattern-curve.svg');
   background-repeat: no-repeat;
   background-position: bottom left;
-  background-size: 285px;
+  background-size: 28.5rem;
 }
 
 .slider {
@@ -40,8 +40,8 @@
   justify-content: center;
   margin-left: auto;
   margin-right: auto;
-  padding-top: 2rem;
-  padding-bottom: 2rem;
+  padding-top: 3.2rem;
+  padding-bottom: 3.2rem;
   width: 78%;
 }
 
@@ -54,19 +54,19 @@
   width: 100%;
   height: auto;
   opacity: 1;
-  box-shadow: 0px 13px 20px -5px hsla(240, 38%, 50%, 25%);
+  box-shadow: 0rem 1.3rem 2rem -0.5rem hsla(240, 38%, 50%, 25%);
 }
 
 .slider_buttons {
   position: absolute;
-  top: calc(100% - 2rem - 28.5px);
-  left: calc(50% - 28.5px);
+  top: calc(100% - 3.2rem - 2.85rem);
+  left: calc(50% - 2.85rem);
   background-color: transparent;
 }
 
 .slider_buttons > button {
-  width: 32px;
-  height: 32px;
+  width: 3.2rem;
+  height: 3.2rem;
   border: none;
   background-color: white;
 }
@@ -76,64 +76,64 @@
 }
 
 .slider_buttons > button:first-of-type {
-  border-top-left-radius: 16px;
-  border-bottom-left-radius: 16px;
+  border-top-left-radius: 1.6rem;
+  border-bottom-left-radius: 1.6rem;
 }
 
 .slider_buttons > button:last-of-type {
-  border-top-right-radius: 16px;
-  border-bottom-right-radius: 16px;
+  border-top-right-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
 }
 
 .slider_buttons > button > svg {
-  width: 10px;
-  height: 10px;
+  width: 1rem;
+  height: 1rem;
 }
 
 .testimonial {
-  padding-top: 25px;
+  padding-top: 2.5rem;
   text-align: center;
 }
 
 .testimonial > * + * {
-  margin-top: 20px;
+  margin-top: 2rem;
 }
 
 .testimonial_content {
-  font-size: 18px;
+  font-size: 1.8rem;
   font-weight: var(--weight-light);
-  line-height: 24px;
-  padding-left: 4px;
-  padding-right: 4px;
+  line-height: 2.4rem;
+  padding-left: .4rem;
+  padding-right: .4rem;
   color: var(--dark-blue);
 
   background-image: url('/frontendmentor/challenge/coding-bootcamp-testimonials-slider/pattern-quotes.svg');
   background-repeat: no-repeat;
   background-position: top center;
-  background-size: 60px;
-  padding-top: 25px;
-  margin-top: -25px;
+  background-size: 6rem;
+  padding-top: 2.5rem;
+  margin-top: -2.5rem;
 }
 
 .testimonial_author > * + * {
-  margin-top: 4px;
+  margin-top: .4rem;
 }
 
 .testimonial_author_name {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: var(--weight-bold);
   color: var(--dark-blue);
 }
 
 .testimonial_author_job {
-  font-size: 15px;
+  font-size: 1.5rem;
   font-weight: var(--weight-medium);
   color: var(--grayish-blue);
 }
 
 @media(min-width: 1024px) {
   .container {
-    background-size: 610px;
+    background-size: 61rem;
   }
 
   .testimonial_container {
@@ -146,33 +146,33 @@
   }
 
   .slider_images {
-    padding-top: 4.5rem;
-    padding-bottom: 4.5rem;
+    padding-top: 7.2rem;
+    padding-bottom: 7.2rem;
   }
 
   .slider_buttons {
-    top: calc(100% - 4.5rem - 31.5px);
-    left: calc(25% - 28.5px);
+    top: calc(100% - 7.2rem - 3.15rem);
+    left: calc(25% - 2.85rem);
   }
 
   .slider_buttons > button {
-    width: 56px;
-    height: 56px;
+    width: 5.6rem;
+    height: 5.6rem;
   }
 
   .slider_buttons > button:first-of-type {
-    border-top-left-radius: 28px;
-    border-bottom-left-radius: 28px;
+    border-top-left-radius: 2.8rem;
+    border-bottom-left-radius: 2.8rem;
   }
   
   .slider_buttons > button:last-of-type {
-    border-top-right-radius: 28px;
-    border-bottom-right-radius: 28px;
+    border-top-right-radius: 2.8rem;
+    border-bottom-right-radius: 2.8rem;
   }
 
   .slider_buttons > button > svg {
-    width: 16px;
-    height: 16px;
+    width: 1.6rem;
+    height: 1.6rem;
   }
 
   .testimonial {
@@ -190,13 +190,13 @@
   }
 
   .testimonial_content {
-    font-size: 32px;
-    line-height: 44px;
+    font-size: 3.2rem;
+    line-height: 4.4rem;
 
-    background-position: 100px 0px;
-    background-size: 120px;
-    padding-top: 67px;
-    margin-top: -67px;
+    background-position: 10rem 0rem;
+    background-size: 12rem;
+    padding-top: 6.7rem;
+    margin-top: -6.7rem;
   }
 
   .testimonial_author {
@@ -204,11 +204,11 @@
   }
 
   .testimonial_author > * {
-    font-size: 20px;
+    font-size: 2rem;
   }
 
   .testimonial_author > * + * {
-    margin-top: 0px;
-    margin-left: 10px;
+    margin-top: 0rem;
+    margin-left: 1rem;
   }
 }

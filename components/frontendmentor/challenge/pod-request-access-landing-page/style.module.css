@@ -11,7 +11,7 @@
   --color-secondary-red: hsl(0, 96%, 61%);
 
   --font-family: 'Chivo', sans-serif;
-  --font-size: 15px;
+  --font-size: 1.5rem;
 
   --weight-light: 300;
   --weight-bold: 700;
@@ -44,7 +44,7 @@
 }
 
 .main {
-  margin-top: 55px;
+  margin-top: 5.5rem;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -59,8 +59,8 @@
 
   text-align: center;
   text-transform: uppercase;
-  font-size: 26px;
-  line-height: 38px;
+  font-size: 2.6rem;
+  line-height: 3.8rem;
   color: var(--color-primary-white);
 }
 
@@ -69,18 +69,18 @@
 }
 
 .main > p {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 
   text-align: center;
   max-width: 35ch;
 
-  font-size: 15px;
-  line-height: 25px;
+  font-size: 1.5rem;
+  line-height: 2.5rem;
   color: var(--color-secondary-light-grey);
 }
 
 .input_container {
-  margin-top: 52px;
+  margin-top: 5.2rem;
 
   display: flex;
   flex-direction: column;
@@ -90,17 +90,17 @@
 }
 
 .input_container > * {
-  height: 46px;
+  height: 4.6rem;
   outline: none;
   border: none;
-  border-radius: 24px;
+  border-radius: 2.4rem;
 
-  font-size: 14px;
+  font-size: 1.4rem;
   font-weight: var(--weight-bold);
 }
 
 .input_container > input {
-  padding-left: 34px;
+  padding-left: 3.4rem;
   color: var(--color-primary-white);
   background-color: var(--color-primary-grey);
 }
@@ -110,7 +110,7 @@
 }
 
 .input_container > button {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 
   color: var(--color-primary-dark);
   background-color: var(--color-primary-green);
@@ -122,14 +122,14 @@
 
 .error_message {
   height: auto;
-  padding-top: 5px;
-  padding-left: 34px;
-  font-size: 12px;
+  padding-top: .5rem;
+  padding-left: 3.4rem;
+  font-size: 1.2rem;
   color: var(--color-secondary-red);
 }
 
 .icon_container {
-  margin-top: 33px;
+  margin-top: 3.3rem;
 
   display: flex;
   flex-direction: row;
@@ -139,22 +139,22 @@
 
 .icon_container > svg:first-of-type {
   height: auto;
-  width: 56px;
+  width: 5.6rem;
 }
 
 .icon_container > svg:nth-of-type(2) {
   height: auto;
-  width: 45px;
+  width: 4.5rem;
 }
 
 .icon_container > svg:nth-of-type(3) {
   height: auto;
-  width: 73px;
+  width: 7.3rem;
 }
 
 .icon_container > svg:last-of-type {
   height: auto;
-  width: 77px;
+  width: 7.7rem;
 }
 
 
@@ -165,7 +165,7 @@
 
     background-image: url('/frontendmentor/challenge/pod-request-access-landing-page/bg-pattern-dots.svg'), url('/frontendmentor/challenge/pod-request-access-landing-page/image-host-tablet.jpg');
     background-repeat: no-repeat, no-repeat;
-    background-position: 30px bottom, right top;
+    background-position: 3rem bottom, right top;
     background-size: auto;
 
     background-size: auto, auto 75%;
@@ -181,10 +181,10 @@
   }
 
   .main {
-    margin-top: 0px;
+    margin-top: 0rem;
 
-    width: 635px;
-    height: 509px;
+    width: 63.5rem;
+    height: 50.9rem;
     background-color: var(--color-primary-dark);
 
     justify-content: flex-end;
@@ -192,78 +192,78 @@
   }
 
   .main > h1 {
-    margin-bottom: 30px;
+    margin-bottom: 3rem;
 
     justify-content: stretch;
     align-items: stretch;
 
     text-align: start;
 
-    font-size: 48px;
-    line-height: 56px;
+    font-size: 4.8rem;
+    line-height: 5.6rem;
   }
 
   .main > p {
-    margin-top: 0px;
-    margin-bottom: 40px;
+    margin-top: 0rem;
+    margin-bottom: 4rem;
 
     text-align: start;
 
-    font-size: 18px;
-    line-height: 28px;
+    font-size: 1.8rem;
+    line-height: 2.8rem;
 
     max-width: 40ch;
   }
 
   .input_container {
-    margin-top: 0px;
+    margin-top: 0rem;
 
-    margin-bottom: 40px;
-    height: 80px;
+    margin-bottom: 4rem;
+    height: 8rem;
     position: relative;
     display: block;
     order: initial;
   }
 
   .input_container > input {
-    width: 427px;
-    height: 56px;
-    border-radius: 28px;
+    width: 42.7rem;
+    height: 5.6rem;
+    border-radius: 2.8rem;
   }
 
   .input_container > button {
-    width: 162px;
-    margin-top: 0px;
+    width: 16.2rem;
+    margin-top: 0rem;
     position: absolute;
-    top: 5px;
-    left: 260px;
+    top: .5rem;
+    left: 26rem;
   }
 
   .icon_container {
-    margin-top: 0px;
+    margin-top: 0rem;
 
-    width: 540px;
+    width: 54rem;
     justify-content: space-between;
   }
 
   .icon_container > svg:first-of-type {
     height: auto;
-    width: 96px;
+    width: 9.6rem;
   }
   
   .icon_container > svg:nth-of-type(2) {
     height: auto;
-    width: 78px;
+    width: 7.8rem;
   }
   
   .icon_container > svg:nth-of-type(3) {
     height: auto;
-    width: 125px;
+    width: 12.5rem;
   }
   
   .icon_container > svg:last-of-type {
     height: auto;
-    width: 129px;
+    width: 12.9rem;
   }
 }
 
@@ -276,7 +276,7 @@
     background-size: auto 11.5%, auto 70%;
 
     padding-left: 11.5vw;
-    padding-top: calc(15vh - 29.5px);
+    padding-top: calc(15vh - 2.95rem);
   }
 
   .wrapper {
@@ -284,11 +284,11 @@
   }
 
   .main {
-    width: 723px;
+    width: 72.3rem;
   }
 
   .main > h1 {
-    font-size: 52px;
-    line-height: 62px;
+    font-size: 5.2rem;
+    line-height: 6.2rem;
   }
 }

@@ -5,8 +5,8 @@
   padding-left: var(--s1);
   padding-right: var(--s1);
 
-  padding-top: 133px;
-  padding-bottom: 133px;
+  padding-top: 13.3rem;
+  padding-bottom: 13.3rem;
 
   background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 100%);
 
@@ -18,8 +18,8 @@
 .center {
   box-sizing: content-box;
   width: 100%;
-  max-width: 920px;
-  min-height: 509px;
+  max-width: 92rem;
+  min-height: 50.9rem;
 
   margin-left: auto;
   margin-right: auto;
@@ -27,25 +27,25 @@
   display: flex;
   flex-wrap: wrap;
 
-  border-radius: 1.5rem;
+  border-radius: 2.4rem;
 
   background-color: white;
 }
 
 .svg_container {
   flex-grow: 1;
-  flex-basis: 370px;
+  flex-basis: 37rem;
 
   /* MOBIL */
-  min-height: 105px;
-  max-height: 105px;
+  min-height: 10.5rem;
+  max-height: 10.5rem;
 
-  border-top-left-radius: 1.5rem;
-  border-top-right-radius: 1.5rem;
+  border-top-left-radius: 2.4rem;
+  border-top-right-radius: 2.4rem;
 
   background-image: url('/frontendmentor/challenge/faq-accordion-card/bg-pattern-mobile.svg');
-  background-size: 240px;
-  background-position: 50% 0px;
+  background-size: 24rem;
+  background-position: 50% 0rem;
   background-repeat: no-repeat;
 
   position: relative;
@@ -70,16 +70,16 @@
 .image_mobile {
   background-color: transparent;
   position: absolute;
-  top: -108px;
-  left: calc(50% - 147px);
+  top: -10.8rem;
+  left: calc(50% - 14.7rem);
 }
 
 .faq_container {
   flex-grow: 1;
-  flex-basis: 550px;
+  flex-basis: 55rem;
 
-  border-bottom-right-radius: 1.5rem;
-  border-bottom-left-radius: 1.5rem;
+  border-bottom-right-radius: 2.4rem;
+  border-bottom-left-radius: 2.4rem;
 
   display: flex;
   flex-direction: column;
@@ -91,7 +91,7 @@
   box-sizing: content-box;
   width: 90%;
 
-  max-width: 600px;
+  max-width: 60rem;
 
   margin-left: auto;
   margin-right: auto;
@@ -114,14 +114,14 @@
     max-height: none;
     background-image: url('/frontendmentor/challenge/faq-accordion-card/bg-pattern-desktop.svg');
     background-size: 255%;
-    background-position: -575px -280px;
+    background-position: -57.5rem -28rem;
     background-repeat: no-repeat;
-    border-bottom-left-radius: 1.5rem;
+    border-bottom-left-radius: 2.4rem;
     border-top-right-radius: 0;
   }
 
   .faq_container {
-    border-top-right-radius: 1.5rem;
+    border-top-right-radius: 2.4rem;
     border-bottom-left-radius: 0rem;
     justify-content: center;
   }
@@ -137,8 +137,8 @@
     width: 122%;
     height: auto;
     position: absolute;
-    top: 76px;
-    left: -82px;
+    top: 7.6rem;
+    left: -8.2rem;
     background-color: transparent;
   }
   
@@ -146,8 +146,8 @@
     display: initial;
     position: absolute;
     width: 46%;
-    top: 207px;
-    left: -83px;
+    top: 20.7rem;
+    left: -83rem;
     background-color: transparent;
   }
 

@@ -5,7 +5,7 @@
   --font-family-header: 'Poppins', sans-serif;
   --font-family-body: 'Open Sans', sans-serif;
 
-  --font-size: 16px;
+  --font-size: 1.6rem;
 
   --weight-regular: 400;
   --weight-semi-bold: 600;
@@ -20,7 +20,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  padding: 38px;
+  padding: 3.8rem;
 
   color: white;
   background-color: var(--primary-violet);
@@ -34,7 +34,7 @@
 }
 
 .header > svg {
-  width: 120px;
+  width: 12rem;
   height: auto;
 }
 
@@ -43,7 +43,7 @@
     justify-content: space-between + margin-top on the children
     is like min spacing between children
   */
-  margin-top: 10px;
+  margin-top: 1rem;
   text-align: center;
 
 
@@ -57,38 +57,38 @@
 }
 
 .main_content {
-  margin-top: 56px;
+  margin-top: 5.6rem;
 }
 
 .main_content > h1 {
   font-family: var(--font-family-header);
-  font-size: 24px;
+  font-size: 2.4rem;
   font-weight: var(--weight-semi-bold);
-  line-height: 36px;
+  line-height: 3.6rem;
 }
 
 .main_content > p {
-  margin-top: 16px;
+  margin-top: 1.6rem;
 
-  line-height: 24px;
+  line-height: 2.4rem;
 }
 
 .main_content > button {
-  margin-top: 24px;
+  margin-top: 2.4rem;
 
-  width: 200px;
-  height: 40px;
+  width: 20rem;
+  height: 4rem;
   font-family: var(--font-family-header);
-  font-size: 12px;
+  font-size: 1.2rem;
 
   outline: none;
   border: none;
-  border-radius: 20px;
+  border-radius: 2rem;
 
   color: var(--primary-violet);
   background-color: white;
 
-  box-shadow: 1px 3px 5px 0px hsla(0, 0%, 0%, 25%);
+  box-shadow: .1rem .3rem .5rem 0rem hsla(0, 0%, 0%, 25%);
 }
 
 .main_content > button:hover {
@@ -107,7 +107,7 @@
     justify-content: space-between + margin-top on the children
     is like min spacing between children
   */
-  margin-top: 10px;
+  margin-top: 1rem;
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -116,45 +116,45 @@
 }
 
 .footer > * + * {
-  margin-left: 10px;
+  margin-left: 1rem;
 }
 
 .footer > button {
-  width: 28px;
-  height: 28px;
+  width: 2.8rem;
+  height: 2.8rem;
 
   display: flex;
   justify-content: center;
   align-items: center;
 
   outline: none;
-  border: 1px solid white;
-  border-radius: 14px;
+  border: .1rem solid white;
+  border-radius: 1.4rem;
 }
 
 .footer > button:hover {
-  border: 1px solid #FF52C1;
+  border: .1rem solid #FF52C1;
   color: #FF52C1;
 }
 
 
 @media(min-width: 1275px) {
   .container {
-    padding-top: 64px;
-    padding-left: 80px;
-    padding-right: 80px;
+    padding-top: 6.4rem;
+    padding-left: 8rem;
+    padding-right: 8rem;
 
     background-image: url('/frontendmentor/challenge/huddle-landing-page-with-single-introductory-section/bg-desktop.svg');
     background-size: auto 100%;
   }
 
   .header > svg {
-    width: 200px;
+    width: 20rem;
     height: auto;
   }
 
   .main {
-    margin-top: 50px;
+    margin-top: 5rem;
     display: flex;
     flex-direction: row;
   }
@@ -164,9 +164,9 @@
   }
 
   .main_content {
-    margin-top: 0px;
-    padding-top: 32px;
-    padding-left: 60px;
+    margin-top: 0rem;
+    padding-top: 3.2rem;
+    padding-left: 6rem;
 
     width: 45.625%;
 
@@ -175,39 +175,39 @@
 
   .main_content > h1 {
     max-width: 25ch;
-    font-size: 40px;
-    line-height: 60px;
+    font-size: 4rem;
+    line-height: 6rem;
   }
 
   .main_content > p {
     max-width: 50ch;
-    font-size: 18px;
-    line-height: 27px;
+    font-size: 1.8rem;
+    line-height: 2.7rem;
   }
 
   .main_content > button {
-    height: 56px;
-    font-size: 18px;
+    height: 5.6rem;
+    font-size: 1.8rem;
 
-    border-radius: 28px;
+    border-radius: 2.8rem;
 
-    box-shadow: 2px 4px 9px 3px hsla(0, 0%, 0%, 25%);
+    box-shadow: .2rem .4rem .9rem .3rem hsla(0, 0%, 0%, 25%);
   }
 
   .footer {
-    margin-top: 10px;
+    margin-top: 1rem;
     justify-content: flex-end;
   }
 
   .footer > * + * {
-    margin-left: 16px;
+    margin-left: 1.6rem;
   }
 
   .footer > button {
-    width: 40px;
-    height: 40px;
+    width: 4rem;
+    height: 4rem;
 
-    border-radius: 20px;
+    border-radius: 2rem;
   }
 
 }

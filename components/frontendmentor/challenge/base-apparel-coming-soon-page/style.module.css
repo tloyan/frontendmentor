@@ -7,7 +7,7 @@
   --background-gradient-primary: linear-gradient(135deg, hsl(0, 80%, 86%), hsl(0, 74%, 74%));
 
   --font-family: 'Josefin Sans', sans-serif;
-  --font-size: 16px;
+  --font-size: 1.6rem;
 
   --weight-light: 300;
   --weight-regular: 400;
@@ -35,13 +35,13 @@
 }
 
 .main_content_header {
-  padding-top: 30px;
-  padding-left: 30px;
-  padding-bottom: 30px;
+  padding-top: 3rem;
+  padding-left: 3rem;
+  padding-bottom: 3rem;
 }
 
 .main_content_header > img {
-  height: 22px;
+  height: 2.2rem;
 }
 
 .image_mobile_wrapper > img {
@@ -53,8 +53,8 @@
   margin-top: auto;
   margin-bottom: auto;
 
-  padding-left: 30px;
-  padding-right: 30px;
+  padding-left: 3rem;
+  padding-right: 3rem;
 
   display: flex;
   flex-direction: column;
@@ -65,12 +65,12 @@
 }
 
 .main_content_content > * + * {
-  margin-top: 30px;
+  margin-top: 3rem;
 }
 
 .content_title {
-  font-size: 40px;
-  letter-spacing: 11px;
+  font-size: 4rem;
+  letter-spacing: 1.1rem;
 }
 
 .content_title > span {
@@ -87,18 +87,18 @@
 }
 
 .content_description {
-  font-size: 14px;
-  line-height: 22px;
+  font-size: 1.4rem;
+  line-height: 2.2rem;
   color: var(--primary-desaturated-red);
 }
 
 .content_input {
   width: 100%;
-  padding-bottom: 18px;
+  padding-bottom: 1.8rem;
 }
 
 .content_input.input_error_email {
-  padding-bottom: 0px;
+  padding-bottom: 0rem;
 }
 
 .input_wrapper {
@@ -108,11 +108,11 @@
 
 .input_wrapper > input {
   width: 100%;
-  padding: 16.5px;
-  border-radius: 25px;
+  padding: 1.65rem;
+  border-radius: 2.5rem;
 
   outline: none;
-  border: 2px solid var(--primary-desaturated-red);
+  border: .2rem solid var(--primary-desaturated-red);
 }
 
 .input_wrapper > input.input_error_email {
@@ -125,23 +125,23 @@
 
 .input_wrapper > svg {
   position: absolute;
-  right: 70px;
-  top: calc(50% - 12px);
+  right: 7rem;
+  top: calc(50% - 1.2rem);
 }
 
 .input_wrapper > button {
   position: absolute;
   height: 100%;
-  width: 64px;
+  width: 6.4rem;
 
   border: none;
   background-image: var(--background-gradient-primary);
 
-  border-radius: 25px;
+  border-radius: 2.5rem;
   outline: none;
   right: 0;
 
-  box-shadow: 0px 15px 15px 0px hsla(0, 36%, 70%, 41%);
+  box-shadow: 0rem 1.5rem 1.5rem 0rem hsla(0, 36%, 70%, 41%);
 }
 
 .input_wrapper > button:active {
@@ -149,10 +149,10 @@
 }
 
 .input_error {
-  padding-top: 5px;
-  padding-left: 17px;
+  padding-top: .5rem;
+  padding-left: 1.7rem;
   text-align: start;
-  font-size: 13px;
+  font-size: 1.3rem;
   color: var(--primary-soft-red);
 }
 
@@ -173,25 +173,25 @@
   }
 
   .main_content_header {
-    width: 445px;
-    padding-left: 30px;
-    padding-top: 50px;
+    width: 44.5rem;
+    padding-left: 3rem;
+    padding-top: 5rem;
   }
 
   .main_content_header > img {
-    height: 33px;
+    height: 3.3rem;
   }
 
   .main_content_content {
-    max-width: 445px;
+    max-width: 44.5rem;
     text-align: start;
 
     align-items: flex-start;
   }
 
   .content_title {
-    font-size: 64px;
-    letter-spacing: 17.5px;
+    font-size: 6.4rem;
+    letter-spacing: 1.75rem;
   }
 
   .image_mobile_wrapper {
@@ -199,17 +199,17 @@
   }
 
   .input_wrapper > input {
-    padding: 19.5px;
-    border-radius: 30px;
+    padding: 1.95rem;
+    border-radius: 3rem;
   }
 
   .input_wrapper > svg {
-    right: 110px;
+    right: 11rem;
   }
 
   .input_wrapper > button {
-    width: 100px;
-    border-radius: 30px;
+    width: 10rem;
+    border-radius: 3rem;
   }
 
   .image_desktop_wrapper {
