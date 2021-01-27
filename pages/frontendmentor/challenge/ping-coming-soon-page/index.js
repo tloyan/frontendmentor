@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import PingComingSoonPageComponent from 'components/frontendmentor/challenge/ping-coming-soon-page';
+import PingComingSoonPageComponent from 'components/frontendmentor/challenge/PingComingSoonPageComponent';
 
-const PingComingSoonPagePage = () => (
+const PingComingSoonPage = () => (
   <Fragment>
     <Head>
       <title>Frontend Mentor | Ping coming soon page</title>
@@ -13,4 +13,4 @@ const PingComingSoonPagePage = () => (
   </Fragment>
 )
 
-export default PingComingSoonPagePage;
+export default PingComingSoonPage;

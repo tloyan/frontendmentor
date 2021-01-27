@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import ProfileCardComponentComponent from 'components/frontendmentor/challenge/profile-card-component';
+import ProfileCardComponent from 'components/frontendmentor/challenge/ProfileCardComponent';
 
 import style from './style.module.css';
 
@@ -10,7 +10,7 @@ const ProfileCardComponentPage = () => (
       <title>Frontend Mentor | Profile card component</title>
       <link rel="icon" src="/favicon.ico" />
     </Head>
-    <ProfileCardComponentComponent />
+    <ProfileCardComponent />
   </div>
 );
 

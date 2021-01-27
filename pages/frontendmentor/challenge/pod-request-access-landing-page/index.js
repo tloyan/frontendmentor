@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import PodRequestAccessLandingPageComponent from 'components/frontendmentor/challenge/pod-request-access-landing-page'
+import PodRequestAccessLandingPageComponent from 'components/frontendmentor/challenge/PodRequestAccessLandingPageComponent'
 
-const PodRequestAccessLandingPagePage = () => (
+const PodRequestAccessLandingPage = () => (
   <Fragment>
     <Head>
       <title>Frontend Mentor | Pod request access landing page</title>
@@ -13,4 +13,4 @@ const PodRequestAccessLandingPagePage = () => (
   </Fragment>
 );
 
-export default PodRequestAccessLandingPagePage;
+export default PodRequestAccessLandingPage;

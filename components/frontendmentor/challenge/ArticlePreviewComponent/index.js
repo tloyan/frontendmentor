@@ -2,7 +2,7 @@ import { useState } from 'react';
 import ShareLogo from 'public/frontendmentor/challenge/article-preview-component/icon-share.svg';
 import style from './style.module.css';
 
-const ArticlePreviewComponentComponent = () => {
+const ArticlePreviewComponent = () => {
   const [active, setActive] = useState(false);
   const sharecontentstyle = active ? style.share_content + ' ' + style.active : style.share_content;
   const sharecontentdesktopstyle = active ? style.share_content_desktop + ' ' + style.active : style.share_content_desktop;
@@ -72,4 +72,4 @@ const ArticlePreviewComponentComponent = () => {
   );
 }
 
-export default ArticlePreviewComponentComponent;
+export default ArticlePreviewComponent;

@@ -1,7 +1,7 @@
 import Head from 'next/head';
 import { Fragment } from 'react';
 
-import FourCardFeatureSectionComponent from 'components/frontendmentor/challenge/four-card-feature-section';
+import FourCardFeatureSectionComponent from 'components/frontendmentor/challenge/FourCardFeatureSectionComponent';
 
 const FourCardFeatureSectionPage = () => (
   <Fragment>

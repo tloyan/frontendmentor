@@ -1,9 +1,9 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import BaseApparelComingSoonPageComponent from 'components/frontendmentor/challenge/base-apparel-coming-soon-page';
+import BaseApparelComingSoonPageComponent from 'components/frontendmentor/challenge/BaseApparelComingSoonPageComponent';
 
-const BaseApparelComingSoonPagePage = () => (
+const BaseApparelComingSoonPage = () => (
   <Fragment>
     <Head>
       <title>Frontend Mentor | Base Apparel coming soon page</title>
@@ -13,4 +13,4 @@ const BaseApparelComingSoonPagePage = () => (
   </Fragment>
 );
 
-export default BaseApparelComingSoonPagePage;
+export default BaseApparelComingSoonPage;

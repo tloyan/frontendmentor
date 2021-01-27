@@ -1,10 +1,10 @@
 import Head from 'next/head';
 
-import SocialProofSectionComponent from 'components/frontendmentor/challenge/social-proof-section';
+import SocialProofSectionComponent from 'components/frontendmentor/challenge/SocialProofSectionComponent';
 
 import style from './style.module.css';
 
-const SocialProofSection = () => (
+const SocialProofSectionPage = () => (
   <div className={style.social_proof_section}>
     <Head>
       <title>Frontend Mentor | Social proof section</title>
@@ -14,4 +14,4 @@ const SocialProofSection = () => (
   </div>
 );
 
-export default SocialProofSection;
+export default SocialProofSectionPage;

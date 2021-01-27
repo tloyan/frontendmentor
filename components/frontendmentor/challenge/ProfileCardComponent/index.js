@@ -1,6 +1,6 @@
 import style from './style.module.css';
 
-const ProfileCardComponentComponent = () => (
+const ProfileCardComponent = () => (
   <div className={style.container}>
     <div className={style.profile_card_container}>
       <div className={style.profile_image_container}>
@@ -30,4 +30,4 @@ const ProfileCardComponentComponent = () => (
   </div>
 );
 
-export default ProfileCardComponentComponent;
+export default ProfileCardComponent;

@@ -1,7 +1,7 @@
 import { Fragment } from 'react';
 import Head from 'next/head';
 
-import IntroComponentWithSignupFormComponent from 'components/frontendmentor/challenge/intro-component-with-signup-form';
+import IntroComponentWithSignupFormComponent from 'components/frontendmentor/challenge/IntroComponentWithSignupFormComponent';
 
 const IntroComponentWithSignupFormPage = () => (
   <Fragment>

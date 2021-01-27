@@ -1,6 +1,6 @@
 import style from './style.module.css';
 
-const SinglePriceGridComponentComponent = () => (
+const SinglePriceGridComponent = () => (
   <div className={style.container}>
     <div className={style.container_centered}>
       <div className={style.introduction_container}>
@@ -38,4 +38,4 @@ const SinglePriceGridComponentComponent = () => (
   </div>
 );
 
-export default SinglePriceGridComponentComponent;
+export default SinglePriceGridComponent;

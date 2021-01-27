@@ -1,6 +1,6 @@
 import Head from 'next/head';
 
-import ArticlePreviewComponentComponent from 'components/frontendmentor/challenge/article-preview-component';
+import ArticlePreviewComponent from 'components/frontendmentor/challenge/ArticlePreviewComponent';
 
 import style from './style.module.css';
 
@@ -10,7 +10,7 @@ const ArticlePreviewComponentPage = () => (
       <title>Frontend Mentor | Article preview component</title>
       <link rel="icon" src="/favicon.ico" />
     </Head>
-    <ArticlePreviewComponentComponent />
+    <ArticlePreviewComponent />
   </div>
 );
 
