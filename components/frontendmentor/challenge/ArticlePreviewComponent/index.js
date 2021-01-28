@@ -45,7 +45,7 @@ const ArticlePreviewComponent = () => {
                       <div><img src="/frontendmentor/challenge/article-preview-component/icon-pinterest.svg" /></div>
                     </div>
                   </div>
-                  <div className={style.triange}></div>
+                  <div className={style.triangle} />
                 </div>
                 <button className={style.author_content_description_share_button} onClick={() => setActive(!active)}>
                   <ShareLogo />
