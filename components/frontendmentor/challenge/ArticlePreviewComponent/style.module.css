@@ -1,4 +1,18 @@
 .container {
+  --very-dark-grayish-blue: hsl(217, 19%, 35%);
+  --desaturated-dark-blue: hsl(214, 17%, 51%);
+  --grayish-blue: hsl(212, 23%, 69%);
+  --light-grayish-blue: hsl(210, 46%, 95%);
+
+  --font-family: 'Manrope', sans-serif;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --font-size: 1.3rem;
+
+  font-family: var(--font-family);
+  font-weight: var(--weight-medium);
+  font-size: var(--font-size);
+  
   width: 100%;
   min-height: 100%;
 
