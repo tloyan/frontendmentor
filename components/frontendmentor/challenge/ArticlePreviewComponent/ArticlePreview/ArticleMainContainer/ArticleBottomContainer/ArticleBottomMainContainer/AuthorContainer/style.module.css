@@ -1,0 +1,30 @@
+.author_container {
+  display: flex;
+  align-items: center;
+}
+
+.author_picture {
+  width: 4rem;
+  height: 4rem;
+  border-radius: 2rem;
+  overflow: hidden;
+}
+
+.author_picture > img {
+  width: 100%;
+  height: auto;
+}
+
+.author_content {
+  margin-left: 1rem;
+  color: var(--grayish-blue);
+}
+
+.author_content > * + * {
+  margin-top: .5rem;
+}
+
+.author_content > :first-child {
+  font-weight: var(--weight-bold);
+  color: var(--very-dark-grayish-blue);
+}

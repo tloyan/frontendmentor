@@ -1,0 +1,10 @@
+.share_content_container {
+  display: flex;
+  align-items: center;
+}
+
+.share_content_container > p {
+  text-transform: uppercase;
+  letter-spacing: .5rem;
+  color: var(--grayish-blue);
+}

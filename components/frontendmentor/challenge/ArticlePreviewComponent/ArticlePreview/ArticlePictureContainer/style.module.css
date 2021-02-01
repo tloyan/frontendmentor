@@ -1,0 +1,24 @@
+.article_picture_container {
+  overflow: hidden;
+}
+
+.article_picture_container > img {
+  width: 100%;
+  height: auto;
+  margin-top: -5%;
+  margin-bottom: -14.5%;
+}
+
+@media (min-width: 900px) {
+  .article_picture_container {
+    border-top-left-radius: 1rem;
+    border-bottom-left-radius: 1rem;
+  }
+
+  .article_picture_container > img {
+    width: auto;
+    height: 100%;
+    margin-top: 0%;
+    margin-bottom: 0%;
+  }
+}

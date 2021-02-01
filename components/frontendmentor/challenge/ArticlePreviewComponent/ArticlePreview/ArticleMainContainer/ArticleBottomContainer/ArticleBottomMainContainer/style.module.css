@@ -1,0 +1,17 @@
+.article_bottom_main_container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  padding-top: 1rem;
+  padding-bottom: 1.6rem;
+  padding-left: 3.4rem;
+  padding-right: 3.4rem;
+}
+
+@media (min-width: 900px) {
+  .article_bottom_main_container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+}

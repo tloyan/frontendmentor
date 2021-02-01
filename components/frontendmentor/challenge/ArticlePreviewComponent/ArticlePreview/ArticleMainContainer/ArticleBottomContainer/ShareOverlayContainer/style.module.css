@@ -1,0 +1,25 @@
+.share_overlay_container {
+  display: none;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 1rem;
+  padding-bottom: 1.6rem;
+  padding-left: 3.4rem;
+  padding-right: 3.4rem;
+  background-color: var(--very-dark-grayish-blue);
+}
+
+.share_overlay_container.active {
+  display: flex;
+}
+
+@media (min-width: 900px) {
+  .share_overlay_container.active {
+    display: none;
+  }
+}

@@ -1,0 +1,32 @@
+.article_content_container {
+  padding-top: 3.8rem;
+  padding-bottom: 2rem;
+  padding-left: 3.4rem;
+  padding-right: 3.4rem;
+}
+
+.article_content_title {
+  font-size: 1.6rem;
+  font-weight: var(--weight-bold);
+  line-height: 2.4rem;
+  color: var(--very-dark-grayish-blue);
+}
+
+.article_content_description {
+  margin-top: 1.4rem;
+  line-height: 2rem;
+  color: var(--desaturated-dark-blue);
+}
+
+@media (min-width: 900px) {
+  .article_content_container {
+    padding-top: .5rem;
+    padding-left: 3.8rem;
+    padding-right: 3.8rem;
+  }
+
+  .article_content_title {
+    line-height: 2.6rem;
+    font-size: 2rem;
+  }
+}

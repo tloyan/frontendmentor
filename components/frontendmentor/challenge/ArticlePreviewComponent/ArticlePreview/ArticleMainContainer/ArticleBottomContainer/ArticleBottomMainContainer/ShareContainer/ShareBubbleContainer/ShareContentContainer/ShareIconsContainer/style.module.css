@@ -1,0 +1,14 @@
+.share_icons_container {
+  margin-left: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.share_icons_container > * {
+  display: flex;
+  align-items: center;
+}
+
+.share_icons_container > * + * {
+  margin-left: 1.6rem;
+}

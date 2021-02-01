@@ -1,0 +1,35 @@
+.share_button {
+  width: 3.2rem;
+  height: 3.2rem;
+  border: none;
+  border-radius: 1.6rem;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--light-grayish-blue);
+}
+
+.share_button:hover {
+  cursor: pointer;
+  background-color: var(--desaturated-dark-blue);
+}
+
+.share_button:focus {
+  outline: none;
+}
+
+.share_button > svg {
+  width: 1.5rem;
+  height: 1.3rem;
+}
+
+.share_button:hover > svg > path {
+  fill: white;
+}
+
+@media (min-width: 900px) {
+  .share_button {
+    position: relative;
+  }
+}
