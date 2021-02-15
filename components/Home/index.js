@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 import style from './style.module.css';
 
 import data from './data'
@@ -13,7 +14,7 @@ const Home = () => {
             <div className={style.challenge_item} key={item.name}>
               <img src={item.imagePreview} />
               <p>{item.name}</p>
-              <button onClick={() => router.push(item.pageUrl)}>Preview</button>
+              <Link href={item.pageUrl}><a><button>Preview</button></a></Link>
               <button onClick={() => window.open(item.githubUrl, '_blank') || window.location.replace(item.githubUrl)}>Code Source</button>
             </div>
           )
