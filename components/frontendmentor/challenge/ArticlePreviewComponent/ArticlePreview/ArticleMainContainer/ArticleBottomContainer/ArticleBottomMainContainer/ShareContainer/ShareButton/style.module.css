@@ -28,7 +28,7 @@
   fill: white;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .share_button {
     position: relative;
   }

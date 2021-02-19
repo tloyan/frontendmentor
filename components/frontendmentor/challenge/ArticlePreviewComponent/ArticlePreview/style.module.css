@@ -10,7 +10,7 @@
   background-color: white;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .article_preview {
     overflow: visible;
     max-width: 73rem;

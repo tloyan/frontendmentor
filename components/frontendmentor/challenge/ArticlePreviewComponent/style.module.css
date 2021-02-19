@@ -28,3 +28,10 @@
 
   background-color: var(--light-grayish-blue);
 }
+
+@media (min-width: 768px) {
+  .container {
+    padding-left: 0rem;
+    padding-right: 0rem;
+  }
+}

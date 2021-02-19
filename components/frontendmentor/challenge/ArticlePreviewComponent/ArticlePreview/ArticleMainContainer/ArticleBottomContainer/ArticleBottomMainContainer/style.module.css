@@ -9,7 +9,7 @@
   padding-right: 3.4rem;
 }
 
-@media (min-width: 900px) {
+@media (min-width: 768px) {
   .article_bottom_main_container {
     padding-top: 0rem;
     padding-bottom: 0rem;
