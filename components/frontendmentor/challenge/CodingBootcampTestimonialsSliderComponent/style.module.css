@@ -32,6 +32,7 @@
   background-image: url('/frontendmentor/challenge/coding-bootcamp-testimonials-slider/pattern-bg.svg');
   background-repeat: no-repeat;
   background-size: contain;
+  background-position: center;
 }
 
 .slider_images {
@@ -100,9 +101,9 @@
 }
 
 .testimonial_content {
-  font-size: 1.8rem;
+  font-size: min(4.8vw, 2.4rem);
   font-weight: var(--weight-light);
-  line-height: 2.4rem;
+  line-height: min(6.4vw, 3.2rem);
   padding-left: .4rem;
   padding-right: .4rem;
   color: var(--dark-blue);
@@ -120,18 +121,18 @@
 }
 
 .testimonial_author_name {
-  font-size: 1.5rem;
+  font-size: min(4vw, 2rem);
   font-weight: var(--weight-bold);
   color: var(--dark-blue);
 }
 
 .testimonial_author_job {
-  font-size: 1.5rem;
+  font-size: min(4vw, 2rem);
   font-weight: var(--weight-medium);
   color: var(--grayish-blue);
 }
 
-@media(min-width: 1024px) {
+@media(min-width: 1024px) and (orientation: landscape) {
   .container {
     background-size: 61rem;
   }
@@ -190,8 +191,8 @@
   }
 
   .testimonial_content {
-    font-size: 3.2rem;
-    line-height: 4.4rem;
+    font-size: 2.22vw;
+    line-height: 3.056vw;
 
     background-position: 10rem 0rem;
     background-size: 12rem;
@@ -204,7 +205,7 @@
   }
 
   .testimonial_author > * {
-    font-size: 2rem;
+    font-size: 1.389vw;
   }
 
   .testimonial_author > * + * {
