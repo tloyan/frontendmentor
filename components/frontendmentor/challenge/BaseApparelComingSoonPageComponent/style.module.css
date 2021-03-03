@@ -53,6 +53,8 @@
   margin-top: auto;
   margin-bottom: auto;
 
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   padding-left: 3rem;
   padding-right: 3rem;
 
@@ -173,7 +175,7 @@
   }
 
   .main_content_header {
-    width: 44.5rem;
+    width: max(32rem, 32vw);
     padding-left: 3rem;
     padding-top: 5rem;
   }
@@ -184,14 +186,20 @@
 
   .main_content_content {
     max-width: 44.5rem;
+    max-width: max(31rem, 31vw);
     text-align: start;
 
     align-items: flex-start;
   }
 
   .content_title {
-    font-size: 6.4rem;
-    letter-spacing: 1.75rem;
+    font-size: max(4rem, 4.44vw);
+    letter-spacing: max(1rem, 1.11vw);
+  }
+
+  .content_description {
+    font-size: max(1rem, 0.972vw);
+    line-height: max(1.5rem, 1.527vw);
   }
 
   .image_mobile_wrapper {
