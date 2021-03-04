@@ -1,17 +1,4 @@
 .container {
-  --ratio: 0.75;
-  --s-5: calc(var(--s-4) * var(--ratio));
-  --s-4: calc(var(--s-3) * var(--ratio));
-  --s-3: calc(var(--s-2) * var(--ratio));
-  --s-2: calc(var(--s-1) * var(--ratio));
-  --s-1: calc(var(--s0) * var(--ratio));
-  --s0: 1.6rem;
-  --s1: calc(var(--s0) / var(--ratio));
-  --s2: calc(var(--s1) / var(--ratio));
-  --s3: calc(var(--s2) / var(--ratio));
-  --s4: calc(var(--s3) / var(--ratio));
-  --s5: calc(var(--s4) / var(--ratio));
-
   --font-plain: 'Kumbh Sans', sans-serif;
 
   --weight-thin: 400;
@@ -25,18 +12,18 @@
   --light-grayish-blue: hsl(240, 5%, 91%);
 
   font-family: var(--font-plain);
-  font-size: var(--s-1);
+  font-size: 1.2rem;
   font-weight: var(--weight-thin);
   color: var(--dark-grayish-blue);
 
   min-height: 100vh;
   min-width: 100vw;
 
-  padding-left: var(--s1);
-  padding-right: var(--s1);
+  padding-left: 2.4rem;
+  padding-right: 2.4rem;
 
-  padding-top: 13.3rem;
-  padding-bottom: 13.3rem;
+  padding-top: 11.5rem;
+  padding-bottom: 1rem;
 
   background: linear-gradient(180deg, var(--soft-violet) 0%, var(--soft-blue) 100%);
 
@@ -49,23 +36,20 @@
   box-sizing: content-box;
   width: 100%;
   max-width: 92rem;
-  min-height: 50.9rem;
 
   margin-left: auto;
   margin-right: auto;
 
   display: flex;
-  flex-wrap: wrap;
+  flex-direction: column;
 
   border-radius: 2.4rem;
 
   background-color: white;
+  box-shadow: 0rem 5rem 5rem -2rem hsl(253, 75%, 27%, 50%);
 }
 
 .svg_container {
-  flex-grow: 1;
-  flex-basis: 37rem;
-
   /* MOBIL */
   min-height: 10.5rem;
   max-height: 10.5rem;
@@ -105,16 +89,13 @@
 }
 
 .faq_container {
-  flex-grow: 1;
-  flex-basis: 55rem;
-
   border-bottom-right-radius: 2.4rem;
   border-bottom-left-radius: 2.4rem;
 
   display: flex;
   flex-direction: column;
-  padding-top: var(--s4);
-  padding-bottom: var(--s4);
+  padding-top: 2.9rem;
+  padding-bottom: 4.5rem;
 }
 
 .faq_subcontainer {
@@ -132,28 +113,52 @@
   margin-left: auto;
   margin-right: auto;
 
-  font-size: calc(var(--s0) * 2);
+  font-size: 3.2rem;
   font-weight: var(--weight-thick);
   color: var(--dark-desaturated-blue);
-  margin-bottom: var(--s2);
+  margin-bottom: 2.8rem;
 }
 
 @media (min-width: 963px) {
+  .container {
+    padding-top: 0rem;
+    padding-bottom: 0rem;
+  }
+
+  .center {
+    min-height: 50.9rem;
+    flex-direction: row;
+  }
+
   .svg_container {
+    width: 39rem;
     min-height: none;
     max-height: none;
     background-image: url('/frontendmentor/challenge/faq-accordion-card/bg-pattern-desktop.svg');
     background-size: 255%;
-    background-position: -57.5rem -28rem;
+    background-position: -60.35rem -30.5rem;
     background-repeat: no-repeat;
     border-bottom-left-radius: 2.4rem;
     border-top-right-radius: 0;
   }
 
   .faq_container {
+    width: 53rem;
+
+    padding-top: 6.5rem;
+    padding-bottom: 0rem;
+    
     border-top-right-radius: 2.4rem;
     border-bottom-left-radius: 0rem;
-    justify-content: center;
+    
+    justify-content: flex-start;
+  }
+
+  .faq_subcontainer {
+    width: 35rem;
+    margin-left: auto;
+    margin-right: auto;
+    padding-right: 1rem;
   }
 
   .faq_subcontainer > h2 {
@@ -168,7 +173,7 @@
     height: auto;
     position: absolute;
     top: 7.6rem;
-    left: -8.2rem;
+    left: -8.6rem;
     background-color: transparent;
   }
   
@@ -177,7 +182,7 @@
     position: absolute;
     width: 46%;
     top: 20.7rem;
-    left: -83rem;
+    left: -8.7rem;
     background-color: transparent;
   }
 
@@ -185,4 +190,3 @@
     display: none;
   }
 }
-

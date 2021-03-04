@@ -28,7 +28,7 @@ const FaqAccordionCardComponent = () => {
             <h2>FAQ</h2>
             {
               data.map(({ question, answer }) => (
-                <QuestionAnswer key={question} question={question} answer={answer} handleClickQuestion={() => setQuestionKey(question)} questionKey={questionKey} />
+                <QuestionAnswer key={question} question={question} answer={answer} handleClickQuestion={() => question === questionKey ? setQuestionKey('') : setQuestionKey(question)} questionKey={questionKey} />
               ))
             }
           </div>

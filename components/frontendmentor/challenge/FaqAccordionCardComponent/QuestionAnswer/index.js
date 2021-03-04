@@ -28,7 +28,7 @@ const QuestionAnswer = ({ question, answer, handleClickQuestion, questionKey }) 
   
   return (
     <Fragment>
-      <div ref={containerRef} className={questionAnswerStyle} style={toogle ? {maxHeight: `${height.questionHeight + height.answerHeight}px`} : {maxHeight: `${height.questionHeight}px`}}>
+      <div ref={containerRef} className={questionAnswerStyle} style={toogle ? {maxHeight: `${height.questionHeight + height.answerHeight + 38 + 13}px`} : {maxHeight: `${height.questionHeight + 38}px`}}>
         <div className={questionStyle} onClick={() => handleClickQuestion()}>
           <p>{question}</p>
           <img src="/frontendmentor/challenge/faq-accordion-card/icon-arrow-down.svg" />
