@@ -1,17 +1,17 @@
 import Head from 'next/head';
 
+import { Fragment } from 'react';
+
 import FaqAccordionCardComponent from 'components/frontendmentor/challenge/FaqAccordionCardComponent';
 
-import style from './style.module.css';
-
 const FaqAccordionCardPage = () => (
-  <div className={style.faq_accordion_card}>
+  <Fragment>
     <Head>
       <title>Frontend Mentor | FAQ Accordion Card</title>
       <link rel="icon" href="/favicon.ico" />
     </Head>
     <FaqAccordionCardComponent />
-  </div>
+  </Fragment>
 );
 
 export default FaqAccordionCardPage;
