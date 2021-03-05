@@ -9,7 +9,7 @@
   margin-bottom: -14.5%;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 862px) {
   .article_picture_container {
     border-top-left-radius: 1rem;
     border-bottom-left-radius: 1rem;

@@ -29,7 +29,7 @@
   background-color: var(--light-grayish-blue);
 }
 
-@media (min-width: 768px) {
+@media (min-width: 862px) {
   .container {
     padding-left: 0rem;
     padding-right: 0rem;

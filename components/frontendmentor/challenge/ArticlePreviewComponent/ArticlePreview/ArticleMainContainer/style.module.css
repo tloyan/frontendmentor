@@ -3,7 +3,7 @@
   flex-direction: column;
 }
 
-@media (min-width: 768px) {
+@media (min-width: 862px) {
   .article_main_container {
     justify-content: center;
     border-top-right-radius: 1rem;
