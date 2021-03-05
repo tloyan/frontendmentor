@@ -62,15 +62,16 @@
 
 .main_content > h1 {
   font-family: var(--font-family-header);
-  font-size: 2.4rem;
+  font-size: min(6.4vw, 3rem);
   font-weight: var(--weight-semi-bold);
-  line-height: 3.6rem;
+  line-height: min(9.6vw, 4.5rem);
 }
 
 .main_content > p {
   margin-top: 1.6rem;
 
-  line-height: 2.4rem;
+  font-size: min(4.267vw, 2rem);
+  line-height: min(6.4vw, 3rem);
 }
 
 .main_content > button {
@@ -138,7 +139,7 @@
 }
 
 
-@media(min-width: 1275px) {
+@media(min-width: 1024px) and (orientation: landscape) {
   .container {
     padding-top: 6.4rem;
     padding-left: 8rem;
@@ -175,14 +176,14 @@
 
   .main_content > h1 {
     max-width: 25ch;
-    font-size: 4rem;
-    line-height: 6rem;
+    font-size: 2.778vw;
+    line-height: 4.167vw;
   }
 
   .main_content > p {
     max-width: 50ch;
-    font-size: 1.8rem;
-    line-height: 2.7rem;
+    font-size: 1.25vw;
+    line-height: 1.875vw;
   }
 
   .main_content > button {
