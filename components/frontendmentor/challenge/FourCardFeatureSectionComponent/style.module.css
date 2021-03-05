@@ -141,7 +141,12 @@
   color: var(--neutral-grayish-blue);
 }
 
-@media(min-width: 1000px) {
+@media(min-width: 1000px) and (orientation: landscape) {
+  .container {
+    padding-top: 1.5rem;
+    padding-bottom: 0rem;
+  }
+
   .header > h1 {
     font-size: 3.6rem;
   }
