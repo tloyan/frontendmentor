@@ -83,6 +83,13 @@ const data = [
     pageUrl: '/frontendmentor/challenge/social-proof-section',
     githubUrl: 'https://github.com/devways/frontendmentor/tree/main/components/frontendmentor/challenge/SocialProofSectionComponent',
   },
+  {
+    name: '3-column preview card component',
+    difficulty: 'newbie',
+    imagePreview:'/preview/desktop-preview 12.jpg',
+    pageUrl: '/frontendmentor/challenge/3-column-preview-card-component',
+    githubUrl: 'https://github.com/devways/frontendmentor/tree/main/components/frontendmentor/challenge/ThreeColumnPreviewCardComponent',
+  },
   
   
 ]
