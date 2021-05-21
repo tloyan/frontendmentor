@@ -1,0 +1,62 @@
+.container {
+  --desatured-light-purle-1: hsl(270, 71%, 17%);
+  --desatured-light-purle-2: hsl(270, 9%, 47%);
+  --desatured-light-purle-3: hsla(270, 9%, 33%, 100%);
+  --desatured-light-purle-4: hsla(270, 9%, 33%, 50%);
+  --desatured-light-purle-5: hsl(270, 18%, 80%);
+  --desatured-light-purle-6: hsl(270, 100%, 99%);
+  --desatured-light-purle-7: hsla(270, 76%, 21%, 6%);
+  --desatured-light-purle-8: hsl(270, 71%, 17%, 69%);
+  --desatured-light-purle-9: hsl(239, 10%, 57%);
+  --desatured-light-purle-10: hsl(270, 9%, 64%);
+
+  --font-family: 'Red Hat Display', sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+  --weight-black: 900;
+  --font-size: 1.6rem;
+
+  font-family: var(--font-family);
+  font-weight: var(--weight-medium);
+  font-size: var(--font-size);
+  
+  width: 100%;
+  min-height: 100%;
+
+  padding-left: 2.5rem;
+  padding-right: 2.5rem;
+
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  align-items: center; /* temporary */
+  font-size: 5rem;
+  font-weight: var(--weight-black);
+  font-style: italic;
+  color: var(--desatured-light-purle-1);
+  text-align: center;
+  
+
+  background-color: var(--light-grayish-blue);
+}
+
+.intro_container {
+
+}
+
+.experiences_container {
+
+}
+
+.schools_container {
+
+}
+
+.skills_container {
+
+}

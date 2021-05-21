@@ -4,7 +4,7 @@ import style from './style.module.css';
 
 import data from './data'
 
-const Home = () => {
+const ChallengesComponent = () => {
   const router = useRouter()
   return (
     <div className={style.container}>
@@ -24,4 +24,4 @@ const Home = () => {
   )
 }
 
-export default Home;
+export default ChallengesComponent;
