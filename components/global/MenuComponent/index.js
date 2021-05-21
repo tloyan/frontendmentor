@@ -23,7 +23,7 @@ const MenuComponent = () => {
           </ul>
         </nav>
         <nav className={style.nav_mobile}>
-          <FontAwesomeIcon icon={ menu ? faTimes : faBars } className={style.menu_icon} onClick={() => setMenu(!menu)}/>
+          <div onClick={() => setMenu(!menu)}><FontAwesomeIcon icon={ menu ? faTimes : faBars } className={style.menu_icon}/></div>
           <ul className={navMobileClass}>
             <li><Link href='/me'><a><p>me</p></a></Link></li>
             <li><Link href='/frontendmentor/challenges'><a><p>challenges</p></a></Link></li>
