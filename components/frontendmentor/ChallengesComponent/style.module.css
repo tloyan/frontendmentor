@@ -1,21 +1,27 @@
 .container {
+  padding-top: 10rem;
+  padding-bottom: 5rem;
+
   min-height: 100%;
 
-  --font-family: 'Chivo', sans-serif;
-  --font-size: 1.5rem;
+  --purple-dark: hsl(270, 71%, 17%);
+  --purple-desatured: hsl(270, 9%, 47%);
 
-  --weight-light: 300;
+  --font-family: 'Red Hat Display', sans-serif;
+  --weight-regular: 400;
+  --weight-medium: 500;
   --weight-bold: 700;
   --weight-black: 900;
+  --font-size: 1.5rem;
 
   font-family: var(--font-family);
   font-size: var(--font-size);
-  font-weight: var(--weight-light);
+  font-weight: var(--weight-medium);
+
+  color: var(--purple-dark);
 
   display: flex;
-  /* justify-content: center; */
   align-items: center;
-  background-color: khaki;
 }
 
 .challenge_container {
@@ -23,26 +29,79 @@
   flex-direction: row;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 1rem;
+  gap: 3rem;
 }
 
 .challenge_item {
   width: 30rem;
   height: 35rem;
+
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
 
   font-weight: var(--weight-bold);
   text-align: center;
-  background-color: lawngreen;
+
+  border-radius: .3rem;
+  box-shadow: .1rem .2rem .4rem hsl(270, 71%, 17%, 7%);
 }
 
 .challenge_item > img {
   width: 100%;
   height: auto;
+
+  border-top-left-radius: .3rem;
+  border-top-right-radius: .3rem;
 }
 
-.challenge_item > button {
-  height: 3rem;
+.challenge_item > div {
+  height: 100%;
+
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
+
+.challenge_item > div > * + * {
+  margin-top: 1.3rem;
+}
+
+.challenge_item > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  padding-left: 4rem;
+  padding-right: 4rem;
+}
+
+.challenge_item > div > div > * + * {
+  margin-top: 1rem;
+}
+
+.challenge_item > div > div > a > button, .challenge_item > div > div > button {
+  width: 100%;
+  height: 3rem;
+
+  font-size: 1.3rem;
+  font-weight: var(--weight-bold);
+
+  border-radius: 2rem;
+  border: none;
+  outline: none;
+}
+
+.challenge_item > div > div > a > button {
+  color: white;
+  background-color: var(--purple-dark);
+  box-shadow: .1rem .2rem .4rem hsl(270, 71%, 17%, 40%);
+}
+
+.challenge_item > div > div > button {
+  background-color: white;
+  box-shadow: .1rem .2rem .4rem hsl(270, 71%, 17%, 17%);
+}
+
+/* .challenge_item > button {
+  height: 3rem;
+} */

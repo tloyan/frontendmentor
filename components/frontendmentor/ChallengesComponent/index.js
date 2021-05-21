@@ -13,9 +13,13 @@ const ChallengesComponent = () => {
           data.map((item) => 
             <div className={style.challenge_item} key={item.name}>
               <img src={item.imagePreview} />
-              <p>{item.name}</p>
-              <Link href={item.pageUrl}><a><button>Preview</button></a></Link>
-              <button onClick={() => window.open(item.githubUrl, '_blank') || window.location.replace(item.githubUrl)}>Code Source</button>
+              <div>
+                <p>{item.name}</p>
+                <div>
+                  <Link href={item.pageUrl}><a><button>view</button></a></Link>
+                  <button onClick={() => window.open(item.githubUrl, '_blank') || window.location.replace(item.githubUrl)}>github</button>
+                </div>
+              </div>
             </div>
           )
         }
