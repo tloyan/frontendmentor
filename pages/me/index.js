@@ -12,6 +12,10 @@ const MePage = () => {
         <link rel="icon" src="/favicon.ico" />
       </Head>
       <style jsx global>{`
+        html, body {
+          scroll-behavior: smooth;
+        }
+        /* Hide scrollbar for Chrome, Safari and Opera */
         body::-webkit-scrollbar {
           display: none;
         }
