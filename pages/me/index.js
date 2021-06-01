@@ -11,6 +11,17 @@ const MePage = () => {
         <title>Devways | Me </title>
         <link rel="icon" src="/favicon.ico" />
       </Head>
+      <style jsx global>{`
+        body::-webkit-scrollbar {
+          display: none;
+        }
+
+        /* Hide scrollbar for IE, Edge and Firefox */
+        body {
+          -ms-overflow-style: none;  /* IE and Edge */
+          scrollbar-width: none;  /* Firefox */
+        }
+      `}</style>
       <MenuComponent />
       <MeComponent />
     </Fragment>
